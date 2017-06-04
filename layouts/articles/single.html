@@ -21,25 +21,32 @@
             <div class="plx-container">
               <div class="plx-group">
                 <div class="plx-layer plx-layer-back marquee">
+                  <figure>
                   <img src="/images/{{ index .Site.Data.css.hash  .Params.marquee  }}">
+                  <figcaption>
+                    {{ .Params.marqueeCaption}}
+                  </figcaption>
+                  </figure>
                 </div>
                 <div class="plx-layer plx-layer-overlay">
                   <div class="title-container">
                     <div class="title-inner">
                       <h1 class="title">{{ .Title }}</h1>
-                      <div class="tagline">
+                      <div class="tagline h4">
                         {{ .Params.tagline }}
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="plx-group content">
-                <main>
-                  <article class="row">
-                    {{ .Content }}
-                  </article>
-                </main>
+              <div class="plx-group">
+                <div class="plx-layer plx-layer-overlay">
+                  <main>
+                    <article class="row">
+                      {{ .Content }}
+                    </article>
+                  </main>
+                </div>
               </div>
             </div>
 

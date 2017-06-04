@@ -7,6 +7,7 @@ slug = ""
 title = "Climbing the biggest mountain in Kansai"
 tagline = "And why I shouldn't do it again"
 marquee = "kongo-view.jpg"
+marqueeCaption = "View from the top of Kongo-san"
 
 +++
 
