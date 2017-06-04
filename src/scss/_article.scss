@@ -1,0 +1,65 @@
+$colour-primary: #297cbb;
+$heading-color: #fff;
+$content-bg: #fff;
+
+.marquee { 
+  img {
+    /* Set rules to fill background */
+    min-height: 100%;
+    min-width: 1024px;
+    
+    /* Set up proportionate scaling */
+    width: 100%;
+    height: auto;
+    
+    /* Set up positioning */
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+}
+
+.content {
+  background: $content-bg;
+}
+
+.heading {
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+  background-color: rgba($colour-primary, 0.5);
+  color: $heading-color;
+  margin-top: 16vh;
+}
+
+/* parallax scrolling */
+
+@media screen and (min-width: 40em) {
+  @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+    .plx-container {
+      perspective: 300px;
+      height: 100vh;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    .plx-layer {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    .plx-layer-overlay {
+      transform: translateZ(0);
+    }
+    .plx-layer-back {
+      transform: translateZ(-295px) scale(2);
+    }
+    .plx-group {
+      position: relative;
+      height: 100vh;
+      transform-style: preserve-3d;
+    }
+  }
+}

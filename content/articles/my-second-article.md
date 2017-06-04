@@ -1,10 +1,12 @@
 +++
-Author = "Dan Bahrami"
+Author = "Rich"
 Description = ""
 date = "2017-05-15T19:14:58+09:00"
 resources = []
 slug = ""
-title = "my second article"
+title = "Climbing the biggest mountain in Kansai"
+tagline = "And why I shouldn't do it again"
+marquee = "kongo-view.jpg"
 
 +++
 

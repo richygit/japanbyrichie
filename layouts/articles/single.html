@@ -4,13 +4,35 @@
     <title>{{ .Title }}</title>
     <meta charset="UTF-8">
     <meta name="description" content="{{ .Description }}">
+    <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "normalize.css" }}" />
+    <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "main.css" }}" />
+    
 </head>
 <body>
-    <main>
-        <article>
-            <h1>{{ .Title }}</h1>
-            {{ .Content }}
-        </article>
-    </main>
+            <div class="plx-container">
+              <div class="plx-group">
+                <div class="plx-layer plx-layer-back marquee">
+                  <img src="/images/{{ index .Site.Data.css.hash  .Params.marquee  }}">
+                </div>
+                <div class="plx-layer plx-layer-overlay">
+                  <div class="title-container">
+                    <div class="heading">
+                      <h1>{{ .Title }}</h1>
+                      <div class="tagline">
+                        {{ .Params.tagline }}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="plx-group content">
+                <main>
+                  <article>
+                    {{ .Content }}
+                  </article>
+                </main>
+              </div>
+            </div>
+
 </body>
 <html>
