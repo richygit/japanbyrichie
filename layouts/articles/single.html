@@ -22,10 +22,10 @@
               <div class="plx-group">
                 <div class="plx-layer plx-layer-back marquee">
                   <figure>
-                  <img src="/images/{{ index .Site.Data.css.hash  .Params.marquee  }}">
-                  <figcaption>
-                    {{ .Params.marqueeCaption}}
-                  </figcaption>
+                    <img src="/images/{{ index .Site.Data.css.hash  .Params.marquee  }}">
+                    <figcaption class="hidden">
+                      {{ .Params.marqueeCaption}}
+                    </figcaption>
                   </figure>
                 </div>
                 <div class="plx-layer plx-layer-overlay">
@@ -39,7 +39,7 @@
                   </div>
                 </div>
               </div>
-              <div class="plx-group">
+              <div class="plx-group content">
                 <div class="plx-layer plx-layer-overlay">
                   <main>
                     <article class="row">

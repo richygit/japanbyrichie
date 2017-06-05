@@ -12,6 +12,31 @@ $content-bg: #fff;
   margin: 0 10px;
 }
 
+.marquee figure {
+  margin: 0px;
+}
+
+/* tablets and above */
+@include breakpoint(768px) {
+  h1.title {
+    color: $heading-color;
+  }
+  .content {
+    background: $content-bg;
+  }
+}
+
+
+/* hide content off screen but ensure it's still accessible for screen readers */
+.hidden {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
 /* parallax scrolling */
 
 @media screen and (min-width: 40em) {
@@ -32,10 +57,6 @@ $content-bg: #fff;
         top: 0;
         left: 0;
       }
-    }
-
-    .content {
-      background: $content-bg;
     }
 
     .title-inner {
