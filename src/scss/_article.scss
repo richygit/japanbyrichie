@@ -1,6 +1,18 @@
 $colour-primary: #297cbb;
 $heading-color: #fff;
 $content-bg: #fff;
+$content-color: #2c3643;
+
+body {
+  font-weight: 300;
+}
+
+h1.title, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 400;
+}
+
+@include text-font("'Lato', sans-serif");
+@include headings-font("'Lato', sans-serif");
 
 .marquee {
   img {
@@ -16,15 +28,6 @@ $content-bg: #fff;
   margin: 0px;
 }
 
-/* tablets and above */
-@include breakpoint(768px) {
-  h1.title {
-    color: $heading-color;
-  }
-  .content {
-    background: $content-bg;
-  }
-}
 
 
 /* hide content off screen but ensure it's still accessible for screen readers */
@@ -94,4 +97,24 @@ $content-bg: #fff;
       transform-style: preserve-3d;
     }
   }
+}
+
+/* tablets and above */
+@include breakpoint(768px) {
+  h1.title {
+    color: $heading-color;
+  }
+  article {
+    margin: auto;
+    max-width: 840px;
+    padding-top: 15px;
+    @include clearfix;
+  }
+  .plx-layer-overlay {
+    margin: 0px;
+  }
+  main {
+    background: $content-bg;
+  }
+  color: $content-color;
 }
