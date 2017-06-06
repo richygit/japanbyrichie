@@ -81,7 +81,7 @@ article .row {
   .logo {
     display: block;
     float: left;
-    font-size: 2em;
+    font-size: 1.5em;
     padding: 15px 20px;
     text-decoration: none;
   }
@@ -235,6 +235,20 @@ article .row {
   h1.title {
     color: $marquee-text-colour;
   }
+
+  @keyframes scaleImage {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.07);
+    }
+  }
+  .marquee figure .bg {
+    animation: 5s ease 0s 1 scaleImage;
+    animation-fill-mode: forwards;
+  }
+
   article {
     margin: auto;
     max-width: 840px;
