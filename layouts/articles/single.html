@@ -32,10 +32,10 @@
         </div>
       </ul>
     </nav>
-              <div class="plx-group">
-                <div class="plx-layer plx-layer-back marquee">
+              <div class="plx-group marquee">
+                <div class="plx-layer plx-layer-back">
                   <figure>
-                    <img src="/images/{{ index .Site.Data.css.hash  .Params.marquee  }}">
+                    <div class="bg" style="background-image: url(/images/{{ index .Site.Data.css.hash  .Params.marquee  }})">
                     <figcaption class="hidden">
                       {{ .Params.marqueeCaption}}
                     </figcaption>
