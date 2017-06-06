@@ -166,13 +166,17 @@ h1.title, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
     }
 
     .title-inner {
-      width: 400px;
-      margin: 0 auto;
-      text-align: center;
+      width: 500px;
+      margin-left: 50px;
+      text-align: left;
       padding: 30px;
-      background-color: rgba($colour-primary, 0.5);
+      background-color: rgba($colour-primary, 0.3);
       color: $marquee-text-color;
       margin-top: 16vh;
+    }
+
+    .title-inner h1.title {
+      font-weight: 600;
     }
 
     .plx-container {
@@ -233,7 +237,7 @@ h1.title, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
   /* nav */
   .header {
-    background-color: transparent;
+    background: linear-gradient(to bottom, rgba(0,0,0, 0.3), transparent 97%);
     li {
       float: left;
     }
