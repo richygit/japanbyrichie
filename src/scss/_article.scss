@@ -277,15 +277,8 @@ article .row {
   }
 
   /* nav */
-  .plx-container.nav {
-    height: 64px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1;
-  }
   .header {
+    text-shadow: 1px 1px 1px #444;
     background: linear-gradient(to bottom, rgba(0,0,0, 0.3), transparent 97%);
     li {
       float: left;
