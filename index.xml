@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>japanpanman</title>
+    <link>https://richygit.github.io/japanbyrichie/</link>
+    <description>Recent content on japanpanman</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <lastBuildDate>Tue, 06 Jun 2017 23:15:19 +0900</lastBuildDate>
+    
+	<atom:link href="https://richygit.github.io/japanbyrichie/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>about</title>
+      <link>https://richygit.github.io/japanbyrichie/about/</link>
+      <pubDate>Tue, 06 Jun 2017 23:15:19 +0900</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/about/</guid>
+      <description>Every time I learned something new about Japan I grew more intrigued.
+ When I first came to Japan in 2014 it was an interesting time in my life. In coming here I got some answers but my questions multiplied. Sure, like a lot of things I probably had an idealised view of what this place was like, but it was just fascinating from every angle. Now, I&amp;rsquo;m here.</description>
+    </item>
+    
+    <item>
+      <title>about</title>
+      <link>https://richygit.github.io/japanbyrichie/contact/</link>
+      <pubDate>Tue, 06 Jun 2017 23:15:19 +0900</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/contact/</guid>
+      <description>Get in contact at noimnotjapanese at gmail.com</description>
+    </item>
+    
+    <item>
+      <title>Climbing the biggest mountain in Kansai</title>
+      <link>https://richygit.github.io/japanbyrichie/articles/my-second-article/</link>
+      <pubDate>Mon, 15 May 2017 19:14:58 +0900</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/articles/my-second-article/</guid>
+      <description>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</description>
+    </item>
+    
+    <item>
+      <title>First Post</title>
+      <link>https://richygit.github.io/japanbyrichie/articles/my-first-article/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/articles/my-first-article/</guid>
+      <description>this is the article cotnent * Can you believe this??
+Are there enough headings in life? The answer could shock you!
+What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</description>
+    </item>
+    
+  </channel>
+</rss>
