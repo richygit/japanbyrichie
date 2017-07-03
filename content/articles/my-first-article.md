@@ -1,6 +1,7 @@
 +++
 title = "First Post"
-head_img = ""
+marqueeCaption = "View from the top of Kongo-san"
+marquee = "articles/kongo-view.jpg"
 +++
 this is the article cotnent
 * Can you believe this??

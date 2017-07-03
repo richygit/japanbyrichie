@@ -1,3 +1,4 @@
-baseURL = "http://japan.richardyuwono.org"
+baseURL = "https://richygit.github.io/japanbyrichie/"
 languageCode = "en-au"
 title = "japanpanman"
+paginate = 9
