@@ -1,17 +1,10 @@
 {{ define "main" }}
-<div class="plx-container">
-  <div class="plx-group content">
-    <div class="plx-layer plx-layer-overlay">
-      <main>
-        <article>
-          <div class="row align-center">
-            <div class="col col-10">
+.plx-container
+  .plx-group content
+    .plx-layer.plx-layer-overlay
+      main
+        article
+          .row.align-center
+            .col.col-10
               {{ .Content }}
-            </div>
-          </div>
-        </article>
-      </main>
-    </div>
-  </div>
-</div>
 {{ end }}

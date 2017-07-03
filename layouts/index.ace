@@ -1,0 +1,23 @@
+= doctype html
+html
+  head
+    title {{ .Title }}
+    meta charset=UTF-8
+    meta name=description content={{ .Description }}
+    link rel=stylesheet href={{"css/normalize.css" | relURL}}
+    {{ $mainUrl := index .Site.Data.css.hash "main.css" }}
+    {{ $cssUrl :=  printf "%s/%s" "css" $mainUrl }}
+    link rel=stylesheet href={{ $cssUrl | relURL }}
+  body
+    main
+    {{ $paginator := .Paginate (where .Data.Pages "Type" "articles") }}
+    {{ range $paginator.Pages }}
+      article
+        h1
+          a href={{ .Permalink }}
+            {{ .Title }}
+        {{ .Summary }}
+        a href={{ .Permalink }}
+          Read the full article
+    {{ end }}
+    {{ template "_internal/pagination.html" . }}

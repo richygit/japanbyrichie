@@ -1,0 +1,22 @@
+{{ define "main" }}
+.plx-container
+  .plx-group marquee
+    .plx-layer.plx-layer-back
+      figure
+        .bg style=background-image: url(/images/{{ index .Site.Data.css.hash  .Params.marquee  }})
+        figcaption.hidden
+          {{ .Params.marqueeCaption}}
+    .plx-layer.plx-layer-overlay
+      .title-container
+        .title-inner
+          h1.title {{ .Title }}
+          .tagline.h4
+            {{ .Params.tagline }}
+  .plx-group.content
+    .plx-layer.plx-layer-overlay
+      main
+        article
+          .row.align-center
+            .col.col-10
+              {{ .Content }}
+{{ end }}
