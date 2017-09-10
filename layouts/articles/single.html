@@ -1,0 +1,37 @@
+{{ define "main" }}
+<div class="plx-container">
+  <div class="plx-group marquee">
+    <div class="plx-layer plx-layer-back">
+      <figure>
+        <div class="bg" style="background-image: url(/images/{{ index .Site.Data.css.hash  .Params.marquee  }})">
+        <figcaption class="hidden">
+          {{ .Params.marqueeCaption}}
+        </figcaption>
+      </figure>
+    </div>
+    <div class="plx-layer plx-layer-overlay">
+      <div class="title-container">
+        <div class="title-inner">
+          <h1 class="title">{{ .Title }}</h1>
+          <div class="tagline h4">
+            {{ .Params.tagline }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="plx-group content">
+    <div class="plx-layer plx-layer-overlay">
+      <main>
+        <article>
+          <div class="row align-center">
+            <div class="col col-10">
+              {{ .Content }}
+            </div>
+          </div>
+        </article>
+      </main>
+    </div>
+  </div>
+</div>
+{{ end }}
