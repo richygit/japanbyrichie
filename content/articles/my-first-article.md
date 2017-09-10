@@ -2,6 +2,7 @@
 title = "First Post"
 marqueeCaption = "View from the top of Kongo-san"
 marquee = "articles/kongo-view.jpg"
+date = "2012-04-06"
 +++
 this is the article cotnent
 * Can you believe this??
