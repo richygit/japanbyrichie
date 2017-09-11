@@ -55,6 +55,11 @@
         gutter: '.gutter-sizer',
         percentPosition: true
       });
+
+      $('.date').each(function(idx, elem) {
+        var relative = moment($(elem).text(), "DD MMMM YYYY").fromNow();
+        $(elem).text(relative);
+      });
     })();
   </script>
 {{ end }}
