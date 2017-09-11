@@ -32,7 +32,7 @@ a {
   width: 100%;
   z-index: 3;
   border-bottom: 1px #ddd solid;
-  font-size: 14px;
+  font-size: 16px;
   a {
     color: $heading-colour;
   }
@@ -59,8 +59,24 @@ a {
     display: block;
     float: left;
     font-size: 1.5em;
-    padding: 15px 20px;
     text-decoration: none;
+    color: $content-colour;
+    width: 180px;
+    height: 60px;
+    padding: 0 10px;
+
+    svg {
+      height: 100%;
+      width: 180px;
+      fill: $content-colour;
+    }
+    
+    .fallback {
+      display: none;
+    }
+    .no-svg .fallback { 
+      background-image: url(images/logo.png); 
+    }
   }
  
   .menu {
@@ -142,6 +158,10 @@ a {
   overflow:hidden;
 }
 
+article img {
+  border-radius:7px;
+  overflow:hidden;
+}
 /* tablets and above */
 @include breakpoint(768px) {
   /* nav */
