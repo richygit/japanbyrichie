@@ -8,15 +8,28 @@ main {
   letter-spacing: 2px;
   font-family: $heading-font;
   list-style-type: none;
-  text-transform: uppercase;
   color: $highlight;
   margin-top: 22px;
+  margin-bottom: 7px;
+}
+
+h2 {
+  font-size: 26px;
+  line-height: 110%;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 14px;
 }
 
 .article-footer {
   font-family: $heading-font;
   color: $light-colour;
   font-weight: 300;
+  span {
+    margin: 0 6px;
+  }
 }
 
 /* masonry layout */
@@ -25,6 +38,7 @@ main {
   width: 100%; 
   float: left;
   padding: 20px;
+  margin-bottom: 20px;
 }
 .gutter-sizer { 
   width: 3%; 
@@ -36,6 +50,7 @@ main {
   .grid-item { 
     width: 30%; 
     padding: 0px;
+    margin-bottom: 60px;
   }
 
   .home {

@@ -18,7 +18,7 @@
                   <a href="{{ .Permalink }}">
                     <img src="/images/{{ index .Site.Data.css.hash  .Params.marquee  }}">
                   </a>
-                  <div class="categories">
+                  <div class="categories upper">
                     {{ range $index, $element := .Params.categories}}
                       {{if $index}}|{{end}} 
                       <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ $element }}</a>
