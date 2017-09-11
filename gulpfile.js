@@ -16,6 +16,9 @@ gulp.task("scss", function () {
         .pipe(hash.manifest("hash.json"))
         //Put the map in the data directory
         .pipe(gulp.dest("data/css"))
+    //copy across static css files
+    gulp.src("src/css/**/*")
+        .pipe(gulp.dest("static/css"))
 })
 
 // Hash images

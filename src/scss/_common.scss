@@ -1,0 +1,164 @@
+$marquee-text-colour: #fff;
+$content-bg: #fff;
+$content-colour: #616161;
+$heading-colour: #505050;
+$highlight: #00bcd4;
+$light-colour: #8d8d8d;
+$heading-font: 'Montserrat';
+$body-font: 'Open Sans';
+
+
+@include text-font("'Open Sans', sans-serif");
+@include headings-font("'Montserrat', sans-serif");
+
+body {
+  color: $content-colour;
+  font-weight: 300;
+}
+
+h1.title, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: $heading-colour;
+}
+
+a {
+  color: $highlight;
+  text-decoration: none;
+}
+
+/* nav */
+.header {
+  background-color: #555;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  a {
+    color: $marquee-text-colour;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+   
+
+  li a {
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+  }
+   
+  li a:hover {
+    background-color: rgba(30,30,30,0.1);
+  }
+   
+  .logo {
+    display: block;
+    float: left;
+    font-size: 1.5em;
+    padding: 15px 20px;
+    text-decoration: none;
+  }
+ 
+  .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
+  }
+
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+
+    .navicon {
+      background: $marquee-text-colour;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+    }
+     
+    .navicon:before,
+    .navicon:after {
+      background: $marquee-text-colour;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+     
+    .navicon:before {
+      top: 5px;
+    }
+     
+    .navicon:after {
+      top: -5px;
+    }
+  }
+   
+  .menu-btn {
+    display: none;
+  }
+   
+  .menu-btn:checked ~ .menu {
+    max-height: 240px;
+  }
+   
+  .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+  }
+   
+  .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+  }
+   
+  .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+  }
+   
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+  .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+  }
+}
+
+/* hide content off screen but ensure it's still accessible for screen readers */
+.hidden {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+/* tablets and above */
+@include breakpoint(768px) {
+  /* nav */
+  .header {
+    text-shadow: 1px 1px 1px #444;
+    li {
+      float: left;
+    }
+    li a {
+      padding: 20px 30px;
+    }
+    .menu {
+      clear: none;
+      float: right;
+      max-height: none;
+    }
+    .menu-icon {
+      display: none;
+    }
+  }
+  color: $content-colour;
+}

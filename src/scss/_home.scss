@@ -1,8 +1,39 @@
+.categories {
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 2px;
+  font-family: $heading-font;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: $highlight;
+}
+
+.article-footer {
+  font-family: $heading-font;
+  color: $light-colour;
+  font-weight: 300;
+}
+
+/* masonry layout */
 .grid-sizer,
 .grid-item { 
-  width: 30%; 
+  width: 100%; 
   float: left;
+  padding: 20px;
 }
 .gutter-sizer { 
   width: 3%; 
+}
+
+/* tablets and above */
+@include breakpoint(768px) {
+  .grid-sizer,
+  .grid-item { 
+    width: 30%; 
+    padding: 0px;
+  }
+
+  .home {
+    padding-top: 40px;
+  }
 }

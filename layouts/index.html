@@ -1,8 +1,11 @@
+{{ define "headStyles" }}
+    <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "home.css" }}" />
+{{ end }} 
 {{ define "headScripts" }}
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 {{ end }} 
 {{ define "main" }}
-  <main>
+  <main class="home">
     <div class="row align-center">
       <div class="col col-10">
         <div class="grid">
@@ -12,20 +15,34 @@
           {{ range $paginator.Pages }}
             <div class="grid-item">
               <article>
-                  <h1>
-                      <a href="{{ .Permalink }}">
-                          {{ .Title }}
-                      </a>
-                  </h1>
-                  {{ .Summary }}
                   <a href="{{ .Permalink }}">
-                      Read the full article
+                    <img src="/images/{{ index .Site.Data.css.hash  .Params.marquee  }}">
                   </a>
+                  <div class="categories">
+                    {{ range $index, $element := .Params.categories}}
+                      {{if $index}}|{{end}} 
+                      <a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}">{{ $element }}</a>
+                    {{end}}
+                  </div>
+                  <h2>
+                    <a href="{{ .Permalink }}">
+                        {{ .Title }}
+                    </a>
+                  </h2>
+                  <p>
+                    {{ .Summary }}
+                  </p>
+                  <div class="article-footer small">
+                    <i class="kube-calendar"></i>
+                    <span class="date">{{.PublishDate.Format "3 January 1999"}}</span>
+                    |
+                    <span class="reading-time">{{$rt := .ReadingTime}} {{ $rt }} min{{if gt $rt 1}}s{{end}}
+                  </div>
               </article>
             </div>
           {{ end }}
-          {{ template "_internal/pagination.html" . }}
         </div>
+        {{ template "_internal/pagination.html" . }}
       </div>
     </div>
   </main>
