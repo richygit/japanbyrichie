@@ -1,3 +1,7 @@
+main {
+  padding-top: 40px; // header
+}
+
 .categories {
   font-weight: 700;
   font-size: 11px;
@@ -6,6 +10,7 @@
   list-style-type: none;
   text-transform: uppercase;
   color: $highlight;
+  margin-top: 22px;
 }
 
 .article-footer {
