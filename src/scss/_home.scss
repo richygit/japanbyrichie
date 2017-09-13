@@ -1,5 +1,5 @@
 main {
-  padding-top: 40px; // header
+  padding: 80px 20px 20px 20px; //extra padding on top for the header
 }
 
 .tags {
@@ -11,6 +11,15 @@ main {
   color: $highlight;
   margin-top: 22px;
   margin-bottom: 7px;
+}
+
+h1 {
+  font-size: 20px;
+  color: $content-colour;
+  a {
+    color: $light-colour;
+    font-family: $body-font;
+  }
 }
 
 h2 {
@@ -37,8 +46,7 @@ p {
 .grid-item { 
   width: 100%; 
   float: left;
-  padding: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .gutter-sizer { 
   width: 3%; 

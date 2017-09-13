@@ -1,6 +1,6 @@
 <main class="home">
   {{ if ne .URL "/" }}
-    <h1>{{ .Title }}</h1>
+    <h1><a href="{{ "/tags/" | relLangURL }}">Tags / </a>{{ .Title }}</h1>
   {{ end }}
   <div class="row align-center">
     <div class="col col-10">
