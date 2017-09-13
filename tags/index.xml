@@ -1,14 +1,69 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on japanpanman</title>
+    <title>Tags on Hello Richie</title>
     <link>https://richygit.github.io/japanbyrichie/tags/</link>
-    <description>Recent content in Tags on japanpanman</description>
+    <description>Recent content in Tags on Hello Richie</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
+    <lastBuildDate>Mon, 15 May 2017 19:14:58 +0900</lastBuildDate>
     
 	<atom:link href="https://richygit.github.io/japanbyrichie/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hiking</title>
+      <link>https://richygit.github.io/japanbyrichie/tags/hiking/</link>
+      <pubDate>Mon, 15 May 2017 19:14:58 +0900</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/tags/hiking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Japan</title>
+      <link>https://richygit.github.io/japanbyrichie/tags/japan/</link>
+      <pubDate>Mon, 15 May 2017 19:14:58 +0900</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/tags/japan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shopping</title>
+      <link>https://richygit.github.io/japanbyrichie/tags/shopping/</link>
+      <pubDate>Mon, 15 May 2017 19:14:58 +0900</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/tags/shopping/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sightseeing</title>
+      <link>https://richygit.github.io/japanbyrichie/tags/sightseeing/</link>
+      <pubDate>Mon, 15 May 2017 19:14:58 +0900</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/tags/sightseeing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tourism</title>
+      <link>https://richygit.github.io/japanbyrichie/tags/tourism/</link>
+      <pubDate>Mon, 15 May 2017 19:14:58 +0900</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/tags/tourism/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tourist</title>
+      <link>https://richygit.github.io/japanbyrichie/tags/tourist/</link>
+      <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/tags/tourist/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

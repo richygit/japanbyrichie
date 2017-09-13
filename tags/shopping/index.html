@@ -4,7 +4,7 @@
 
  <html class="no-js" lang=""> 
 <head>
-    <title>about</title>
+    <title>Shopping</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="/css/kube-713c586b.css" />
 
     
-      <link rel="stylesheet" href="/css/main-a9b64b9d.css" />
-    
+    <link rel="stylesheet" href="/css/home-de58609d.css" />
+
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Open+Sans:300,300i" rel="stylesheet">
 
     
-    
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
     <script src="/js/modernizr-2.8.3-respond-1.4.2.min-90db4ffd.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
@@ -43,22 +44,73 @@
       </ul>
     </nav>
     
-<div class="plx-container">
-  <div class="plx-group content">
-    <div class="plx-layer plx-layer-overlay">
-      <main>
-        <article>
-          <div class="row align-center">
-            <div class="col col-10">
-              <p>Get in contact at noimnotjapanese at gmail.com</p>
-
-            </div>
+  <main class="home">
+  <div class="row align-center">
+    <div class="col col-10">
+      
+        <h1><a href="/japanbyrichie/tags/">Tags / </a>Shopping</h1>
+      
+      <div class="grid">
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+        
+        
+          <div class="grid-item">
+            <article>
+                <a href="https://richygit.github.io/japanbyrichie/articles/file2/">
+                  <img src="/images/articles/kongo-view-ba517cb8.jpg">
+                </a>
+                <div class="tags upper">
+                  
+                     
+                    <a href="/japanbyrichie/tags/hiking">hiking</a>
+                  
+                    | 
+                    <a href="/japanbyrichie/tags/shopping">shopping</a>
+                  
+                </div>
+                <h2>
+                  <a href="https://richygit.github.io/japanbyrichie/articles/file2/">
+                      2Climbing the biggest mountain in Kansai
+                  </a>
+                </h2>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <div class="article-footer smaller">
+                  <i class="kube-calendar"></i>
+                  <span class="date">12 January 1999</span>
+                  |
+                  <span class="reading-time"> 2 mins
+                </div>
+            </article>
           </div>
-        </article>
-      </main>
+        
+      </div>
+      <div class="pagination-container">
+        
+
+      </div>
     </div>
   </div>
-</div>
+</main>
+
+<script>
+  (function() {
+    var msnry = new Masonry('.grid', {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      gutter: '.gutter-sizer',
+      percentPosition: true
+    });
+
+    $('.date').each(function(idx, elem) {
+      var relative = moment($(elem).text(), "DD MMMM YYYY").fromNow();
+      $(elem).text(relative);
+    });
+  })();
+</script>
+
 
 
 

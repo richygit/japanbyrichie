@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tourist on Hello Richie</title>
+    <link>https://richygit.github.io/japanbyrichie/tags/tourist/</link>
+    <description>Recent content in Tourist on Hello Richie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <lastBuildDate>Fri, 06 Apr 2012 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://richygit.github.io/japanbyrichie/tags/tourist/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>First Post</title>
+      <link>https://richygit.github.io/japanbyrichie/articles/my-first-article/</link>
+      <pubDate>Fri, 06 Apr 2012 00:00:00 +0000</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/articles/my-first-article/</guid>
+      <description>this is the article cotnent * Can you believe this??
+Are there enough headings in life? The answer could shock you!
+What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&amp;rsquo;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</description>
+    </item>
+    
+  </channel>
+</rss>

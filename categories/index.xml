@@ -1,14 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on japanpanman</title>
+    <title>Categories on Hello Richie</title>
     <link>https://richygit.github.io/japanbyrichie/categories/</link>
-    <description>Recent content in Categories on japanpanman</description>
+    <description>Recent content in Categories on Hello Richie</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-au</language>
     
 	<atom:link href="https://richygit.github.io/japanbyrichie/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Hiking</title>
+      <link>https://richygit.github.io/japanbyrichie/categories/hiking/</link>
+      <pubDate>Mon, 15 May 2017 19:14:58 +0900</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/categories/hiking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tourist</title>
+      <link>https://richygit.github.io/japanbyrichie/categories/tourist/</link>
+      <pubDate>Mon, 15 May 2017 19:14:58 +0900</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/categories/tourist/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
