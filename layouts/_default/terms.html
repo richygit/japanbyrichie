@@ -1,7 +1,19 @@
+{{ define "headStyles" }}
+    <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "home.css" }}" />
+{{ end }} 
+{{ define "headScripts" }}
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+{{ end }} 
 {{ define "main" }}
-  <ul id="all-tags">
-    {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-      <li><a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
-    {{ end }}
-  </ul>
+<main class="home">
+  <div class="row align-center">
+    <div class="col col-10">
+      <ul id="all-tags">
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+          <li><a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
+        {{ end }}
+      </ul>
+    </end>
+  </end>
+</end>
 {{ end }}
