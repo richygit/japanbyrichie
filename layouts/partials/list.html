@@ -1,9 +1,9 @@
 <main class="home">
-  {{ if ne .URL "/" }}
-    <h1><a href="{{ "/tags/" | relLangURL }}">Tags / </a>{{ .Title }}</h1>
-  {{ end }}
   <div class="row align-center">
     <div class="col col-10">
+      {{ if ne .URL "/" }}
+        <h1><a href="{{ "/tags/" | relLangURL }}">Tags / </a>{{ .Title }}</h1>
+      {{ end }}
       <div class="grid">
         <div class="grid-sizer"></div>
         <div class="gutter-sizer"></div>
