@@ -3,7 +3,7 @@ title = "First Post"
 marqueeCaption = "View from the top of Kongo-san"
 marquee = "articles/kongo-view.jpg"
 date = "2012-04-06"
-categories = ["hiking", "tourist"]
+tags = ["hiking", "tourist"]
 +++
 this is the article cotnent
 * Can you believe this??
