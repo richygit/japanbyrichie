@@ -8,12 +8,49 @@
 <main class="home">
   <div class="row align-center">
     <div class="col col-10">
-      <ul id="all-tags">
+      <h1>Tags</h1>
+      <div class="grid">
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+
         {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
-          <li><a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
+          {{ range first 1 $taxonomy }}
+          <div class="grid-item">
+            <article>
+                <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">
+                  <img class="hide-sm" src="/images/{{ index .Site.Data.css.hash  .Page.Params.marquee  }}">
+                  <h2>
+                    <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}"> {{ $name }} ({{ len ($taxonomy) }})</a>
+                  </h2>
+                </a>
+                <p>
+                  {{ .Page.PublishDate.Format "3 January 1999" }}
+                </p>
+            </article>
+          </div>
+          {{ end }}
         {{ end }}
-      </ul>
+      </div>
+      <div class="pagination-container">
+        {{ template "_internal/pagination.html" . }}
+      </div>
     </end>
   </end>
 </end>
+
+<script>
+  (function() {
+    var msnry = new Masonry('.grid', {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      gutter: '.gutter-sizer',
+      percentPosition: true
+    });
+
+    $('.date').each(function(idx, elem) {
+      var relative = moment($(elem).text(), "DD MMMM YYYY").fromNow();
+      $(elem).text(relative);
+    });
+  })();
+</script>
 {{ end }}
