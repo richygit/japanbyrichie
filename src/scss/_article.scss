@@ -4,6 +4,17 @@
   padding-top: 50vh;
 }
 
+.gradient-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.67;
+  z-index: 1;
+  background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);
+}
+
 .marquee {
   .bg {
     background-position: 50%;
@@ -24,6 +35,12 @@
     color: $marquee-text-colour;
   }
   h1.title {
+    color: $marquee-text-colour;
+    font-size: 40px;
+    line-height: 42px;
+  }
+  .tagline {
+    font-family: $body-font;
     color: $marquee-text-colour;
   }
 }
@@ -67,13 +84,8 @@ article .row {
       margin-left: 50px;
       text-align: left;
       padding: 30px;
-      background-color: rgba($highlight, 0.3);
       color: $marquee-text-colour;
-      margin-top: 16vh;
-    }
-
-    .title-inner h1.title {
-      font-weight: 600;
+      margin-top: 46vh;
     }
 
     .plx-container {
