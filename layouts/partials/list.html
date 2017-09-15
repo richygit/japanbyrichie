@@ -12,7 +12,7 @@
           <div class="grid-item">
             <article>
                 <a href="{{ .Permalink }}">
-                  <img src="/images/{{ index .Site.Data.css.hash  .Params.marquee  }}">
+                  <img src="/images/{{ index .Site.Data.images.hash  .Params.marquee  }}">
                 </a>
                 <div class="tags upper">
                   {{ range $index, $element := .Params.tags}}

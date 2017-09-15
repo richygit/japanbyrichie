@@ -4,3 +4,4 @@ static/
 public/
 **/*.sw*
 **/.DS_Store
+src/resize_images/*

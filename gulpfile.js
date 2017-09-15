@@ -2,7 +2,9 @@ var gulp         = require("gulp"),
     sass         = require("gulp-sass"),
     autoprefixer = require("gulp-autoprefixer"),
     hash         = require("gulp-hash"),
-    del          = require("del")
+    del          = require("del"),
+    responsive   = require('gulp-responsive'),
+    runSequence = require('run-sequence')
 
 // Compile SCSS files to CSS
 gulp.task("scss", function () {
@@ -21,14 +23,35 @@ gulp.task("scss", function () {
         .pipe(gulp.dest("static/css"))
 })
 
-// Hash article images
-gulp.task("images", function () {
-    del(["static/articles/**/*"])
-    gulp.src("src/images/**/*")
-        .pipe(hash())
-        .pipe(gulp.dest("static/images"))
-        .pipe(hash.manifest("hash.json"))
-        .pipe(gulp.dest("data/images"))
+//create images in different resolutions
+gulp.task("resize_images", function() {
+    del(["src/resize_images/**/*"])
+    return gulp.src('src/images/**/*.jpg')
+      .pipe(responsive({
+        '**/*.jpg': [{
+          width: 450,
+          rename: { suffix: '-450px' },
+        }, {
+        }],
+      }, {
+        // Global configuration for all images
+        // The output quality for JPEG, WebP and TIFF output formats
+        quality: 70,
+        // Use progressive (interlace) scan for JPEG and PNG output
+        progressive: true,
+        // Strip all metadata
+        withMetadata: false,
+      }))
+      .pipe(gulp.dest('src/resize_images'))
+})
+
+gulp.task("images", function() {
+  del(["static/images/**/*"])
+  gulp.src("src/resize_images/**/*")
+      .pipe(hash())
+      .pipe(gulp.dest("static/images"))
+      .pipe(hash.manifest("hash.json"))
+      .pipe(gulp.dest("data/images"))
 })
 
 // Hash javascript
@@ -41,10 +64,14 @@ gulp.task("js", function () {
         .pipe(gulp.dest("data/js"))
 })
 
+gulp.task("init", function() {
+  runSequence(["scss", "js"], "resize_images", "images")
+})
+
 // Watch asset folder for changes
-gulp.task("watch", ["scss", "images", "js"], function () {
+gulp.task("watch", ["init"], function () {
     gulp.watch("src/scss/**/*", ["scss"])
-    gulp.watch("src/images/**/*", ["images"])
+    gulp.watch("src/images/**/*", function(){ runSequence("resize_images", "images")} )
     gulp.watch("src/js/**/*", ["js"])
 })
 
