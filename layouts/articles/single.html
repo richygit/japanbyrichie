@@ -1,9 +1,16 @@
+{{ define "headScripts" }}
+  <script src="/js/{{ index .Site.Data.js.hash "ofi.min.js" }}"></script>
+{{ end }}
 {{ define "main" }}
+  {{ $fileNameBase := replaceRE "(.*).jp(e?)g$" "$1" .Params.marquee }}
+  {{ $file450 := $fileNameBase | printf "%s-450px.jpg"}}
+  {{ $file768 := $fileNameBase | printf "%s-768px.jpg"}}
+  {{ $file1024 := $fileNameBase | printf "%s-1024px.jpg"}}
 <div class="plx-container">
   <div class="plx-group marquee">
     <div class="plx-layer plx-layer-back">
       <figure>
-        <div class="bg" style="background-image: url(/images/{{ index .Site.Data.images.hash  .Params.marquee  }})">
+        <img class="bg" src="/images/{{ index .Site.Data.images.hash  .Params.marquee  }}"  srcset="/images/{{ index .Site.Data.images.hash  $file450 }} 450w, /images/{{ index .Site.Data.images.hash  $file768  }} 768w, /images/{{ index .Site.Data.images.hash  $file1024  }} 1024w, /images/{{ index .Site.Data.images.hash  .Params.marquee  }}" />
         <div class="gradient-overlay"/>
         <figcaption class="hidden">
           {{ .Params.marqueeCaption}}
@@ -35,4 +42,7 @@
     </div>
   </div>
 </div>
+<script>
+  objectFitImages();
+</script>
 {{ end }}

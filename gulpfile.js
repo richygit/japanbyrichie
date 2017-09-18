@@ -30,8 +30,15 @@ gulp.task("resize_images", function() {
       .pipe(responsive({
         '**/*.jpg': [{
           width: 450,
-          rename: { suffix: '-450px' },
+          rename: { suffix: '-450px' }
         }, {
+          width: 768,
+          rename: { suffix: '-768px' }
+        }, {
+          width: 1024,
+          rename: { suffix: '-1024px' }
+        }, {
+          width: '100%'
         }],
       }, {
         // Global configuration for all images
