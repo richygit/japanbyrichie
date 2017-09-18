@@ -4,21 +4,10 @@
   padding-top: 50vh;
 }
 
-.gradient-overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  opacity: 0.67;
-  z-index: 1;
-  background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);
-}
-
 .marquee {
   .bg {
     object-fit: cover;
-    height: 100vh;
+    height: 40vh;
     font-family: 'object-fit: cover;';
   }
 
@@ -27,13 +16,13 @@
   }
 
   .plx-layer-overlay {
-    position: absolute;
+    display: block;
+    color: $heading-colour;
     top: 70px;
     left: 0px;
-    color: $marquee-text-colour;
   }
   h1.title {
-    color: $marquee-text-colour;
+    color: $heading-colour;
     font-size: 40px;
     line-height: 42px;
   }
@@ -127,9 +116,25 @@ article .row {
       transform: scale(1.07);
     }
   }
-  .marquee figure .bg {
-    animation: 5s ease 0s 1 scaleImage;
-    animation-fill-mode: forwards;
+  .marquee {
+    h1.title {
+      color: $marquee-text-colour;
+    }
+    figure .bg {
+      animation: 5s ease 0s 1 scaleImage;
+      animation-fill-mode: forwards;
+    }
+  }
+
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.67;
+    z-index: 1;
+    background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);
   }
 
   article {
@@ -140,6 +145,7 @@ article .row {
   }
   .plx-layer-overlay {
     margin: 0px;
+    position: absolute;
   }
   main {
     background: $content-bg;
