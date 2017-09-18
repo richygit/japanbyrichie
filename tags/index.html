@@ -14,13 +14,14 @@
     <link rel="stylesheet" href="/css/kube-713c586b.css" />
 
     
-      <link rel="stylesheet" href="/css/main-a9b64b9d.css" />
-    
+    <link rel="stylesheet" href="/css/home-de58609d.css" />
+
 
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Open+Sans:300,300i" rel="stylesheet">
 
     
-    
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
     <script src="/js/modernizr-2.8.3-respond-1.4.2.min-90db4ffd.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
@@ -43,21 +44,135 @@
       </ul>
     </nav>
     
-  <ul id="all-tags">
-    
-      <li><a href="/japanbyrichie/tags/hiking">hiking</a></li>
-    
-      <li><a href="/japanbyrichie/tags/japan">japan</a></li>
-    
-      <li><a href="/japanbyrichie/tags/shopping">shopping</a></li>
-    
-      <li><a href="/japanbyrichie/tags/sightseeing">sightseeing</a></li>
-    
-      <li><a href="/japanbyrichie/tags/tourism">tourism</a></li>
-    
-      <li><a href="/japanbyrichie/tags/tourist">tourist</a></li>
-    
-  </ul>
+<main class="home">
+  <div class="row align-center">
+    <div class="col col-10">
+      <h1>Tags</h1>
+      <div class="grid">
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
+
+        
+          
+          <div class="grid-item">
+            <article>
+                <a href="/japanbyrichie/tags/hiking">
+                  <img class="hide-sm" src="/images/">
+                  <h2>
+                    <a href="/japanbyrichie/tags/hiking"> hiking (2)</a>
+                  </h2>
+                </a>
+                <p>
+                  12 January 1999
+                </p>
+            </article>
+          </div>
+          
+        
+          
+          <div class="grid-item">
+            <article>
+                <a href="/japanbyrichie/tags/japan">
+                  <img class="hide-sm" src="/images/">
+                  <h2>
+                    <a href="/japanbyrichie/tags/japan"> japan (1)</a>
+                  </h2>
+                </a>
+                <p>
+                  12 January 1999
+                </p>
+            </article>
+          </div>
+          
+        
+          
+          <div class="grid-item">
+            <article>
+                <a href="/japanbyrichie/tags/shopping">
+                  <img class="hide-sm" src="/images/">
+                  <h2>
+                    <a href="/japanbyrichie/tags/shopping"> shopping (1)</a>
+                  </h2>
+                </a>
+                <p>
+                  12 January 1999
+                </p>
+            </article>
+          </div>
+          
+        
+          
+          <div class="grid-item">
+            <article>
+                <a href="/japanbyrichie/tags/sightseeing">
+                  <img class="hide-sm" src="/images/">
+                  <h2>
+                    <a href="/japanbyrichie/tags/sightseeing"> sightseeing (1)</a>
+                  </h2>
+                </a>
+                <p>
+                  12 January 1999
+                </p>
+            </article>
+          </div>
+          
+        
+          
+          <div class="grid-item">
+            <article>
+                <a href="/japanbyrichie/tags/tourism">
+                  <img class="hide-sm" src="/images/">
+                  <h2>
+                    <a href="/japanbyrichie/tags/tourism"> tourism (1)</a>
+                  </h2>
+                </a>
+                <p>
+                  12 January 1999
+                </p>
+            </article>
+          </div>
+          
+        
+          
+          <div class="grid-item">
+            <article>
+                <a href="/japanbyrichie/tags/tourist">
+                  <img class="hide-sm" src="/images/">
+                  <h2>
+                    <a href="/japanbyrichie/tags/tourist"> tourist (1)</a>
+                  </h2>
+                </a>
+                <p>
+                  12 January 1999
+                </p>
+            </article>
+          </div>
+          
+        
+      </div>
+      <div class="pagination-container">
+        
+
+      </div>
+    </end>
+  </end>
+</end>
+
+<script>
+  (function() {
+    var msnry = new Masonry('.grid', {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      gutter: '.gutter-sizer',
+      percentPosition: true
+    });
+
+    $('.date').each(function(idx, elem) {
+      var relative = moment($(elem).text(), "DD MMMM YYYY").fromNow();
+      $(elem).text(relative);
+    });
+  })();
+</script>
 
 
 
