@@ -11,7 +11,7 @@ categories = ["matsuri", "festival", "Osaka"]
 
 {{< lede "Putting bodies, houses and wooden floats on the line this festival features the spectacle of throngs of people pulling massive floats through the narrow streets of the city. TLDR: Jump to the end to watch the video." >}}
 
-I learned long ago not to ask why at matsuri (fetivals). Why do they hold this festival? Why do they pull the Danjiri (floats) around? Why is there a man standing on the top dancing? Most of the time, nobody knows. Sometimes you'll get to ask a local and they'll invariably give you a wholly unsatisfying answer. "It's been held for more than 70 years!" Or: "My father, grandfather and his father participated in this."
+I learned long ago not to ask why at matsuri (festivals). Why do they hold this festival? Why do they pull the Danjiri (floats) around? Why is there a man standing on the top dancing? Most of the time, nobody knows. Sometimes you'll get to ask a local and they'll invariably give you a wholly unsatisfying answer. "It's been held for more than 70 years!" Or: "My father, grandfather and his father participated in this."
 
 So why, in country known for people wearing face masks to prevent the spread of disease, do hundreds of people volunteer to risk their lives pulling a wooden Danjiri weighing several tonnes through the narrow streets of a town in Southern Osaka?
 
