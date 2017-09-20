@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://richygit.github.io/japanbyrichie/articles/kishiwada-danjiri/</loc>
+    <lastmod>2017-09-19T09:17:23+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://richygit.github.io/japanbyrichie/about/</loc>
     <lastmod>2017-06-06T23:15:19+09:00</lastmod>
   </url>
@@ -84,7 +89,7 @@
   
   <url>
     <loc>https://richygit.github.io/japanbyrichie/articles/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
+    <lastmod>2017-09-19T09:17:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -94,8 +99,14 @@
   </url>
   
   <url>
+    <loc>https://richygit.github.io/japanbyrichie/categories/festival/</loc>
+    <lastmod>2017-09-19T09:17:23+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://richygit.github.io/japanbyrichie/</loc>
-    <lastmod>2017-06-06T23:15:19+09:00</lastmod>
+    <lastmod>2017-09-19T09:17:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -114,6 +125,18 @@
   <url>
     <loc>https://richygit.github.io/japanbyrichie/tags/japan/</loc>
     <lastmod>2017-05-15T19:14:58+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/categories/matsuri/</loc>
+    <lastmod>2017-09-19T09:17:23+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/categories/osaka/</loc>
+    <lastmod>2017-09-19T09:17:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
