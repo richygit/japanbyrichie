@@ -14,6 +14,7 @@ $body-font: 'Open Sans';
 body {
   color: $content-colour;
   font-weight: 300;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1.title, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -23,6 +24,10 @@ h1.title, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 a {
   color: $highlight;
   text-decoration: none;
+}
+
+.yt {
+  margin: 25px 0;
 }
 
 /* nav */

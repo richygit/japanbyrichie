@@ -66,117 +66,122 @@ article .row {
 
 /* parallax scrolling */
 
-@media screen and (min-width: 40em) {
-  @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+@media screen {
+  @include breakpoint(768px) {
+    @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
 
-    .marquee { 
-      img {
-        /* Set rules to fill background */
-        min-height: 100%;
-        min-width: 1024px;
-        
-        /* Set up proportionate scaling */
-        width: 100%;
-        height: auto;
-        
-        /* Set up positioning */
-        position: fixed;
+      .marquee { 
+        img {
+          /* Set rules to fill background */
+          min-height: 100%;
+          min-width: 1024px;
+          
+          /* Set up proportionate scaling */
+          width: 100%;
+          height: auto;
+          
+          /* Set up positioning */
+          position: fixed;
+          top: 0;
+          left: 0;
+        }
+      }
+
+      .title-inner {
+        width: 600px;
+        margin-left: 50px;
+        text-align: left;
+        padding: 30px;
+        color: $marquee-text-colour;
+        margin-top: 46vh;
+      }
+
+      .plx-container {
+        perspective: 300px;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+        padding-top: 64px;
+      }
+      .plx-layer {
+        position: absolute;
         top: 0;
+        right: 0;
+        bottom: 0;
         left: 0;
+      }
+      .plx-layer-overlay {
+        transform: translateZ(0);
+      }
+      .plx-layer-back {
+        transform: translateZ(-295px) scale(2);
+      }
+      .plx-group {
+        position: relative;
+        height: 100vh;
+        transform-style: preserve-3d;
       }
     }
 
-    .title-inner {
-      width: 500px;
-      margin-left: 50px;
-      text-align: left;
-      padding: 30px;
-      color: $marquee-text-colour;
-      margin-top: 46vh;
-    }
 
-    .plx-container {
-      perspective: 300px;
-      height: 100vh;
-      overflow-x: hidden;
-      overflow-y: auto;
-    }
-    .plx-layer {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
-    .plx-layer-overlay {
-      transform: translateZ(0);
-    }
-    .plx-layer-back {
-      transform: translateZ(-295px) scale(2);
-    }
-    .plx-group {
-      position: relative;
-      height: 100vh;
-      transform-style: preserve-3d;
-    }
-  }
-}
-
-/* tablets and above */
-@include breakpoint(768px) {
-  h1.title {
-    color: $marquee-text-colour;
-  }
-
-  @keyframes scaleImage {
-    0% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(1.07);
-    }
-  }
-  .marquee {
     h1.title {
       color: $marquee-text-colour;
     }
-    figure .bg {
-      animation: 5s ease 0s 1 scaleImage;
-      animation-fill-mode: forwards;
+
+    @keyframes scaleImage {
+      0% {
+        transform: scale(1);
+      }
+      100% {
+        transform: scale(1.07);
+      }
     }
-  }
+    .marquee {
+      h1.title {
+        color: $marquee-text-colour;
+      }
+      figure .bg {
+        animation: 5s ease 0s 1 scaleImage;
+        animation-fill-mode: forwards;
+      }
+      .tagline {
+        color: $marquee-text-colour;
+        line-height: 26px;
+      }
+    }
 
-  .gradient-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    opacity: 0.67;
-    z-index: 1;
-    background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);
-  }
+    .gradient-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0.67;
+      z-index: 1;
+      background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);
+    }
 
-  article {
-    margin: auto;
-    max-width: 840px;
-    padding-top: 15px;
-    @include clearfix;
-  }
-  .plx-layer-overlay {
-    margin: 0px;
-    position: absolute;
-  }
-  main {
-    background: $content-bg;
-  }
-  .menu {
-    position:relative;
-  }
-  .menu-left {
-    float: left;
-  }
-  .menu-right {
-    float: right;
+    article {
+      margin: auto;
+      max-width: 840px;
+      padding-top: 15px;
+      @include clearfix;
+    }
+    .plx-layer-overlay {
+      margin: 0px;
+      position: absolute;
+    }
+    main {
+      background: $content-bg;
+    }
+    .menu {
+      position:relative;
+    }
+    .menu-left {
+      float: left;
+    }
+    .menu-right {
+      float: right;
+    }
   }
 }

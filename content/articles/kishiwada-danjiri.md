@@ -35,5 +35,6 @@ You can tell it's not that safe because there's streaming tape like a crime scen
 
 What captured me the most was the incredible display of the man at the top, dancing and flapping with fans in each hand. It was truly captivating to watch this person straddle the danjiri at such a height, hopping from one side to the other as he look like he was harnessing the wind. There was majesty in the expression of energy as he almost willed the gods to propel the danjiri at lightning speed, without a singular care for his own safety as he channelled the movement and sound just like a bird embellishing its nest with movement and magnificence.
 
-{{< youtube zFDGn8l1dcA >}}
-
+<div class="yt">
+  {{< youtube zFDGn8l1dcA >}}
+</div>
