@@ -1,7 +1,27 @@
 
+body {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
 .static main {
   height: 100vh;
   padding-top: 50vh;
+}
+
+.lede {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 24px;
+}
+
+blockquote {
+  font-size: 30px;
+  line-height: 42px;
+  color: $light-colour;
+  font-weight: bold;
 }
 
 .marquee {
@@ -28,7 +48,7 @@
   }
   .tagline {
     font-family: $body-font;
-    color: $marquee-text-colour;
+    color: $heading-colour;
   }
 }
 
