@@ -10,8 +10,8 @@
   <div class="plx-group marquee">
     <div class="plx-layer plx-layer-back">
       <figure>
-        <img class="bg" src="/images/{{ index .Site.Data.images.hash  .Params.marquee  }}"  srcset="/images/{{ index .Site.Data.images.hash  $file450 }} 450w, /images/{{ index .Site.Data.images.hash  $file768  }} 768w, /images/{{ index .Site.Data.images.hash  $file1024  }} 1024w, /images/{{ index .Site.Data.images.hash  .Params.marquee  }}" />
-        <div class="gradient-overlay"/>
+        <img class="zoom" src="/images/{{ index .Site.Data.images.hash  .Params.marquee  }}"  srcset="/images/{{ index .Site.Data.images.hash  $file450 }} 450w, /images/{{ index .Site.Data.images.hash  $file768  }} 768w, /images/{{ index .Site.Data.images.hash  $file1024  }} 1024w, /images/{{ index .Site.Data.images.hash  .Params.marquee  }}" />
+        <div class="gradient-overlay title"></div>
         <figcaption class="hidden">
           {{ .Params.marqueeCaption}}
         </figcaption>

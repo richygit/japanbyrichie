@@ -5,6 +5,7 @@ body {
   line-height: 1.8;
 }
 
+/* static pages */
 .static main {
   height: 100vh;
   padding-top: 50vh;
@@ -25,14 +26,11 @@ blockquote {
 }
 
 .marquee {
-  .bg {
+  img {
+    width:100%;
     object-fit: cover;
     height: 40vh;
     font-family: 'object-fit: cover;';
-  }
-
-  img {
-    width:100%;
   }
 
   .plx-layer-overlay {
@@ -70,7 +68,19 @@ article .row {
   @include breakpoint(768px) {
     @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
 
-      .marquee { 
+      @keyframes scaleImage {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(1.07);
+        }
+      }
+      figure .zoom {
+        animation: 5s ease 0s 1 scaleImage;
+        animation-fill-mode: forwards;
+      }
+      .marquee {
         img {
           /* Set rules to fill background */
           min-height: 100%;
