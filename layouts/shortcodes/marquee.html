@@ -1,0 +1,36 @@
+            </div><!-- .col -->
+          </div><!-- .row -->
+        </article>
+      </main>
+    </div><!-- .plx-layer -->
+  </div><!-- .plx-group -->
+  <div class="plx-group marquee secondary">
+    <div class="plx-layer plx-layer-back">
+
+      {{ $src := .Get "src"}}
+      {{ $fileNameBase := replaceRE "(.*).jp(e?)g$" "$1" $src }}
+      {{ $file450 := $fileNameBase | printf "%s-450px.jpg"}}
+      {{ $file768 := $fileNameBase | printf "%s-768px.jpg"}}
+      {{ $file1024 := $fileNameBase | printf "%s-1024px.jpg"}}
+      <figure>
+        <img alt="{{.Get "alt"}}" src="/images/{{ index .Site.Data.images.hash $src }}"  srcset="/images/{{ index .Site.Data.images.hash  $file450 }} 450w, /images/{{ index .Site.Data.images.hash  $file768  }} 768w, /images/{{ index .Site.Data.images.hash  $file1024  }} 1024w, /images/{{ index .Site.Data.images.hash  $src  }}" />
+        <div class="gradient-overlay"></div>
+        <figcaption class="hidden">{{.Get "caption"}}</figcaption>
+      </figure>
+
+    </div><!-- .plx-layer-back -->
+    <div class="plx-layer plx-layer-overlay">
+      <div class="layer-container">
+        <div class="layer-inner">
+          {{ .Get "caption" }}
+        </div><!-- .title-inner -->
+      </div><!-- .title-container -->
+    </div><!-- .plx-layer-overlay -->
+  </div><!-- .plx-group -->
+  <div class="plx-group">
+    <div class="plx-layer plx-layer-overlay">
+      <main>
+        <article>
+          <div class="row align-center">
+            <div class="col col-10">
+

@@ -24,7 +24,7 @@ blockquote {
   color: $light-colour;
   font-weight: bold;
 }
-
+  
 .marquee {
   img {
     width:100%;
@@ -39,7 +39,13 @@ blockquote {
     top: 70px;
     left: 0px;
   }
-  h1.title {
+  figure {
+    margin: 0px;
+  }
+}
+
+.title {
+  h1 {
     color: $heading-colour;
     font-size: 40px;
     line-height: 42px;
@@ -52,10 +58,6 @@ blockquote {
 
 .plx-layer-overlay {
   margin: 0 10px;
-}
-
-.marquee figure {
-  margin: 0px;
 }
 
 article .row {
@@ -80,7 +82,15 @@ article .row {
         animation: 5s ease 0s 1 scaleImage;
         animation-fill-mode: forwards;
       }
+
       .marquee {
+        height: 500px; /* fallback for older browsers */
+        height: 95vh;
+        &.secondary {
+          height: 500px; /* fallback for older browsers */
+          height: 85vh;
+        }
+
         img {
           /* Set rules to fill background */
           min-height: 100%;
@@ -88,22 +98,57 @@ article .row {
           
           /* Set up proportionate scaling */
           width: 100%;
-          height: auto;
           
           /* Set up positioning */
           position: fixed;
           top: 0;
           left: 0;
         }
+        figcaption {
+          color: $marquee-text-colour;
+        }
       }
 
-      .title-inner {
-        width: 600px;
-        margin-left: 50px;
-        text-align: left;
-        padding: 30px;
+      .gradient-overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        opacity: 0.67;
+        z-index: 1;
+        background-image: linear-gradient(to left top, #000000, rgba(0,0,0, 0) 56%);
+      }
+      .title.gradient-overlay {
+        background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);
+      }
+
+      .title {
+        .layer-inner {
+          width: 600px;
+          margin-left: 50px;
+          text-align: left;
+          margin-top: 40vh;
+        }
+        h1 {
+          color: $marquee-text-colour;
+        }
+        .tagline {
+          color: $marquee-text-colour;
+          line-height: 26px;
+        }
+      }
+
+      .secondary .layer-inner {
+        margin-top: 70vh;
+        font-weight: bold;
+      }
+      .layer-inner {
         color: $marquee-text-colour;
-        margin-top: 46vh;
+        padding: 30px;
+        width: 100%;
+        margin-right: 50px;
+        text-align: right;
       }
 
       .plx-container {
@@ -114,84 +159,59 @@ article .row {
         padding-top: 64px;
       }
       .plx-layer {
-        position: absolute;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
       }
-      .plx-layer-overlay {
-        transform: translateZ(0);
+
+      .content {
+        z-index: 1;
       }
+      .plx-layer-overlay {
+        &.title {
+          -webkit-transform: translateZ(120px) scale(.6);
+          transform: translateZ(120px) scale(.6);
+        }
+        transform: translateZ(0);
+        z-index: 2;
+      }
+
       .plx-layer-back {
+        -webkit-transform: translateZ(-295px) scale(2);
         transform: translateZ(-295px) scale(2);
+        z-index: 1;
+        position: absolute;
+        height: 100vh;
       }
       .plx-group {
         position: relative;
-        height: 100vh;
+        display: inline-block;
+        vertical-align: top;
+        width: 100%;
         transform-style: preserve-3d;
       }
-    }
 
-
-    h1.title {
-      color: $marquee-text-colour;
-    }
-
-    @keyframes scaleImage {
-      0% {
-        transform: scale(1);
+      article {
+        margin: auto;
+        max-width: 840px;
+        padding-top: 15px;
       }
-      100% {
-        transform: scale(1.07);
+      .plx-layer-overlay {
+        margin: 0px;
       }
-    }
-    .marquee {
-      h1.title {
-        color: $marquee-text-colour;
+      main {
+        background: $content-bg;
       }
-      figure .bg {
-        animation: 5s ease 0s 1 scaleImage;
-        animation-fill-mode: forwards;
+      .menu {
+        position:relative;
       }
-      .tagline {
-        color: $marquee-text-colour;
-        line-height: 26px;
+      .menu-left {
+        float: left;
       }
-    }
-
-    .gradient-overlay {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      opacity: 0.67;
-      z-index: 1;
-      background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);
-    }
-
-    article {
-      margin: auto;
-      max-width: 840px;
-      padding-top: 15px;
-      @include clearfix;
-    }
-    .plx-layer-overlay {
-      margin: 0px;
-      position: absolute;
-    }
-    main {
-      background: $content-bg;
-    }
-    .menu {
-      position:relative;
-    }
-    .menu-left {
-      float: left;
-    }
-    .menu-right {
-      float: right;
+      .menu-right {
+        float: right;
+      }
     }
   }
 }

@@ -16,18 +16,18 @@
           {{ .Params.marqueeCaption}}
         </figcaption>
       </figure>
-    </div>
-    <div class="plx-layer plx-layer-overlay">
-      <div class="title-container">
-        <div class="title-inner">
-          <h1 class="title">{{ .Title }}</h1>
+    </div><!-- .plx-layer -->
+    <div class="plx-layer plx-layer-overlay title">
+      <div class="layer-container">
+        <div class="layer-inner">
+          <h1>{{ .Title }}</h1>
           <div class="tagline h4">
             {{ .Params.tagline }}
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
+        </div><!-- .title-inner -->
+      </div><!-- .title-container -->
+    </div><!-- .plx-layer-overlay -->
+  </div><!-- .plx-group -->
   <div class="plx-group content">
     <div class="plx-layer plx-layer-overlay">
       <main>
@@ -35,13 +35,13 @@
           <div class="row align-center">
             <div class="col col-10">
               {{ .Content }}
-            </div>
-          </div>
+            </div><!-- .col -->
+          </div><!-- .row -->
         </article>
       </main>
-    </div>
-  </div>
-</div>
+    </div><!-- .plx-layer -->
+  </div><!-- .plx-group -->
+</div><!-- .plx-container -->
 <script>
   objectFitImages();
 </script>

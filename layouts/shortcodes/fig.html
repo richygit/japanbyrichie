@@ -4,6 +4,6 @@
 {{ $file768 := $fileNameBase | printf "%s-768px.jpg"}}
 {{ $file1024 := $fileNameBase | printf "%s-1024px.jpg"}}
 <figure>
-<img alt="{{.Get "alt"}}" src="/images/{{ index .Site.Data.images.hash $src }}"  srcset="/images/{{ index .Site.Data.images.hash  $file450 }} 450w, /images/{{ index .Site.Data.images.hash  $file768  }} 768w, /images/{{ index .Site.Data.images.hash  $file1024  }} 1024w, /images/{{ index .Site.Data.images.hash  $src  }}" />
-<figcaption>{{.Get "caption"}}</figcaption>
+  <img alt="{{.Get "alt"}}" src="/images/{{ index .Site.Data.images.hash $src }}"  srcset="/images/{{ index .Site.Data.images.hash  $file450 }} 450w, /images/{{ index .Site.Data.images.hash  $file768  }} 768w, /images/{{ index .Site.Data.images.hash  $file1024  }} 1024w, /images/{{ index .Site.Data.images.hash  $src  }}" />
+  <figcaption class="hidden">{{.Get "caption"}}</figcaption>
 </figure>
