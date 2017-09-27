@@ -37,6 +37,8 @@
             <div class="col col-10">
               <div class="posted-date"> Posted: <time datetime="{{.Date.Format "2 Jan 2006"}}">{{.Date.Format "2 Jan 2006"}}</time> </div>
               {{ .Content }}
+
+              {{ partial "footer" . }}
             </div><!-- .col -->
           </div><!-- .row -->
         </div><!-- .plx-layer -->

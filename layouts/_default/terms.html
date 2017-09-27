@@ -24,7 +24,7 @@
                   </h2>
                 </a>
                 <p>
-                  {{ .Page.PublishDate.Format "3 January 1999" }}
+                  {{ .Page.Date.Format "2 January 2006" }}
                 </p>
             </article>
           </div>
@@ -53,4 +53,5 @@
     });
   })();
 </script>
+{{ partial "footer" . }}
 {{ end }}

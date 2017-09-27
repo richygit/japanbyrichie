@@ -30,7 +30,7 @@
                 <p>
                   {{ .Summary }}
                 </p>
-                <div class="article-footer smaller">
+                <div class="footer smaller">
                   <i class="kube-calendar"></i>
                   <span class="date">{{.Date.Format "2 January 2006"}}</span>
                   |
@@ -62,3 +62,5 @@
     });
   })();
 </script>
+
+{{ partial "footer" . }}
