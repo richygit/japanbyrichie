@@ -1,4 +1,9 @@
 
+.plx-group {
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+}
+
 body {
   font-weight: 400;
   font-size: 16px;
@@ -72,7 +77,7 @@ blockquote {
   margin: 0 10px;
 }
 
-article .row {
+.row {
   padding-top: 10px;
 }
 
@@ -177,7 +182,7 @@ article .row {
         left: 0;
       }
 
-      .content {
+      .fg {
         z-index: 1;
       }
       .plx-layer-overlay {
@@ -187,6 +192,9 @@ article .row {
         }
         transform: translateZ(0);
         z-index: 2;
+        &.content-bg {
+          background: $content-bg;
+        }
       }
 
       .plx-layer-back {
@@ -204,16 +212,13 @@ article .row {
         transform-style: preserve-3d;
       }
 
-      article {
+      .row {
         margin: auto;
         max-width: 840px;
-        padding-top: 15px;
+        padding-top: 25px;
       }
       .plx-layer-overlay {
         margin: 0px;
-      }
-      main {
-        background: $content-bg;
       }
       .menu {
         position:relative;
