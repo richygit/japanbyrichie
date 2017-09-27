@@ -34,6 +34,7 @@
         <article>
           <div class="row align-center">
             <div class="col col-10">
+              <div class="posted-date"> Posted: <time datetime="{{.Date.Format "2 Jan 2006"}}">{{.Date.Format "2 Jan 2006"}}</time> </div>
               {{ .Content }}
             </div><!-- .col -->
           </div><!-- .row -->
