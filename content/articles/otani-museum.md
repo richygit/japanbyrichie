@@ -6,7 +6,7 @@ Description = "A visit to the Otani Museum of Art for the Bologna Illustrators E
 tagline = "Art and Gardens collide"
 marquee = "articles/otani-museum/view-outside.jpg"
 marqueeCaption = "The view of the incredible gardens from within the art gallery"
-categories = ["art", "museum", "hyogo"]
+tags = ["art", "museum", "hyogo"]
 +++
 
 Visit the [ Otani Website ]( http://otanimuseum.jp/english.html ) yourself to see what's happening.

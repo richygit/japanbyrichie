@@ -6,7 +6,7 @@ Description = "Kishiwada Danjiri Matsuri (Festival) involves crazy people pullin
 tagline = "Why your mum told you not to run with scissors"
 marquee = "articles/kishiwada-danjiri/danjiri.jpg"
 marqueeCaption = "The Majesty and Danger of Danjiri"
-categories = ["matsuri", "festival", "Osaka"]
+tags = ["matsuri", "festival", "Osaka"]
 +++
 
 {{< lede "Putting bodies, houses and wooden floats on the line this festival features the spectacle of throngs of people pulling massive floats through the narrow streets of the city. TLDR: Jump to the end to watch the video." >}}
