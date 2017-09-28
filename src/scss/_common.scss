@@ -67,10 +67,11 @@ a {
     padding: 18px 20px;
     font-weight: bold;
     text-decoration: none;
+    color: $light-colour;
   }
    
   li a:hover {
-    background-color: rgba(30,30,30,0.1);
+   color: #aaaaaa;
   }
    
   .logo {
