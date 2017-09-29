@@ -10,6 +10,10 @@ body {
   line-height: 1.8;
 }
 
+main {
+  padding: 0px;
+}
+
 /* static pages */
 .static {
   padding-top: 80px;
@@ -74,7 +78,7 @@ blockquote {
 }
 
 .plx-layer-overlay {
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
 .row {
@@ -83,152 +87,155 @@ blockquote {
 
 /* parallax scrolling */
 
-@media screen {
-  @include breakpoint(768px) {
-    @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
+@media screen { @include breakpoint(768px) { @supports ((perspective: 1px) and (not (-webkit-overflow-scrolling: touch))) {
 
-      @keyframes scaleImage {
-        0% {
-          transform: scale(1);
-        }
-        100% {
-          transform: scale(1.07);
-        }
-      }
-      figure .zoom {
-        animation: 5s ease 0s 1 scaleImage;
-        animation-fill-mode: forwards;
-      }
-
-      .marquee {
-        height: 500px; /* fallback for older browsers */
-        height: 95vh;
-        &.secondary {
-          height: 500px; /* fallback for older browsers */
-          height: 85vh;
-        }
-
-        img {
-          /* Set rules to fill background */
-          min-height: 100%;
-          min-width: 1024px;
-          
-          /* Set up proportionate scaling */
-          width: 100%;
-          
-          /* Set up positioning */
-          position: fixed;
-          top: 0;
-          left: 0;
-        }
-        figcaption {
-          color: $marquee-text-colour;
-        }
-      }
-
-      .gradient-overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        opacity: 0.67;
-        z-index: 1;
-        background-image: linear-gradient(to left top, #000000, rgba(0,0,0, 0) 56%);
-      }
-      .title.gradient-overlay {
-        background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);
-      }
-
-      .title {
-        .layer-inner {
-          width: 600px;
-          margin-left: 50px;
-          text-align: left;
-          margin-top: 40vh;
-        }
-        h1 {
-          color: $marquee-text-colour;
-        }
-        .tagline {
-          color: $marquee-text-colour;
-          line-height: 26px;
-        }
-      }
-
-      .secondary .layer-inner {
-        margin-top: 70vh;
-        font-weight: bold;
-      }
-      .layer-inner {
-        color: $marquee-text-colour;
-        padding: 30px;
-        width: 100%;
-        margin-right: 50px;
-        text-align: right;
-      }
-
-      .plx-container {
-        perspective: 300px;
-        height: 100vh;
-        overflow-x: hidden;
-        overflow-y: auto;
-        padding-top: 64px;
-      }
-      .plx-layer {
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-      }
-
-      .fg {
-        z-index: 1;
-      }
-      .plx-layer-overlay {
-        &.title {
-          -webkit-transform: translateZ(120px) scale(.6);
-          transform: translateZ(120px) scale(.6);
-        }
-        transform: translateZ(0);
-        z-index: 2;
-        &.content-bg {
-          background: $content-bg;
-        }
-      }
-
-      .plx-layer-back {
-        -webkit-transform: translateZ(-295px) scale(2);
-        transform: translateZ(-295px) scale(2);
-        z-index: 1;
-        position: absolute;
-        height: 100vh;
-      }
-      .plx-group {
-        position: relative;
-        display: inline-block;
-        vertical-align: top;
-        width: 100%;
-        transform-style: preserve-3d;
-      }
-
-      .row {
-        margin: auto;
-        max-width: 840px;
-        padding-top: 25px;
-      }
-      .plx-layer-overlay {
-        margin: 0px;
-      }
-      .menu {
-        position:relative;
-      }
-      .menu-left {
-        float: left;
-      }
-      .menu-right {
-        float: right;
-      }
+  @keyframes scaleImage {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.07);
     }
   }
-}
+  figure .zoom {
+    animation: 5s ease 0s 1 scaleImage;
+    animation-fill-mode: forwards;
+  }
+
+  .marquee {
+    height: 500px; /* fallback for older browsers */
+    height: 95vh;
+    &.secondary {
+      height: 500px; /* fallback for older browsers */
+      height: 85vh;
+    }
+
+    img {
+      /* Set rules to fill background */
+      min-height: 100%;
+      min-width: 1024px;
+      
+      /* Set up proportionate scaling */
+      width: 100%;
+      
+      /* Set up positioning */
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    figcaption {
+      color: $marquee-text-colour;
+    }
+  }
+
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0.67;
+    z-index: 1;
+    background-image: linear-gradient(to left top, #000000, rgba(0,0,0, 0) 56%);
+  }
+  .title.gradient-overlay {
+    background-image: linear-gradient(to right top, #000000, rgba(0,0,0, 0) 56%);
+  }
+
+  .title {
+    .layer-inner {
+      width: 600px;
+      margin-left: 50px;
+      text-align: left;
+      margin-top: 40vh;
+    }
+    h1 {
+      color: $marquee-text-colour;
+    }
+    .tagline {
+      color: $marquee-text-colour;
+      line-height: 26px;
+    }
+  }
+
+  .secondary .layer-inner {
+    margin-top: 70vh;
+    font-weight: bold;
+  }
+  .layer-inner {
+    color: $marquee-text-colour;
+    padding: 30px;
+    width: 100%;
+    margin-right: 50px;
+    text-align: right;
+  }
+
+  .plx-container {
+    perspective: 300px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-top: 64px;
+  }
+  .plx-layer {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+
+  .fg {
+    z-index: 1;
+  }
+  .plx-layer-overlay {
+    &.title {
+      -webkit-transform: translateZ(120px) scale(.6);
+      transform: translateZ(120px) scale(.6);
+    }
+    transform: translateZ(0);
+    z-index: 2;
+    &.content-bg {
+      background: $content-bg;
+    }
+  }
+
+  .plx-layer-back {
+    -webkit-transform: translateZ(-295px) scale(2);
+    transform: translateZ(-295px) scale(2);
+    z-index: 1;
+    position: absolute;
+    height: 100vh;
+  }
+  .plx-group {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    transform-style: preserve-3d;
+  }
+
+  .row {
+    margin: auto;
+    max-width: 840px;
+    padding-top: 25px;
+  }
+  .plx-layer-overlay {
+    margin: 0px;
+  }
+  .menu {
+    position:relative;
+  }
+  .menu-left {
+    float: left;
+  }
+  .menu-right {
+    float: right;
+  }
+  //target IE edge because parallax scrolling has weird rendering
+  @supports (-ms-ime-align: auto) {
+    body, .plx-layer-overlay.title {
+      transform: translateZ(0);
+    }
+  }
+
+} } }

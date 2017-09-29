@@ -16,6 +16,11 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+main {
+  padding: 80px 20px 20px 20px; //extra padding on top for the header
+}
+
+
 h1.title, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   color: $heading-colour;
 }
@@ -23,6 +28,10 @@ h1.title, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 a {
   color: $highlight;
   text-decoration: none;
+}
+
+figure {
+  margin: 0px;
 }
 
 .yt {
@@ -71,7 +80,7 @@ a {
   }
    
   li a:hover {
-   color: #aaaaaa;
+   color: $highlight;
   }
    
   .logo {
@@ -84,10 +93,14 @@ a {
     height: 60px;
     padding: 0 10px;
 
+
     svg {
       height: 100%;
       width: 180px;
       fill: $content-colour;
+      &:hover {
+        fill: $highlight;
+      }
     }
     
     .svg-fallback {

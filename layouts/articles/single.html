@@ -1,3 +1,6 @@
+{{ define "headStyles" }}
+    <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "article.css" }}" />
+{{ end }} 
 {{ define "headScripts" }}
   <script src="/js/{{ index .Site.Data.js.hash "ofi.min.js" }}"></script>
 {{ end }}
