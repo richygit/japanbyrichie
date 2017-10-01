@@ -1,11 +1,11 @@
 {{ define "headStyles" }}
-    <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "home.css" }}" />
+    <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "page.css" }}" />
 {{ end }} 
 {{ define "headScripts" }}
   {{ partial "list_head.html" . }}
 {{ end }} 
 {{ define "main" }}
-<main class="home">
+<main class="page">
   <div class="row align-center">
     <div class="col col-10">
       <h1>Tags</h1>
