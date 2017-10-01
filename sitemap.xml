@@ -23,77 +23,7 @@
   </url>
   
   <url>
-    <loc>https://richygit.github.io/japanbyrichie/articles/file1/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/articles/file2/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/articles/file3/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/articles/file10/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/articles/file4/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/articles/file5/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/articles/file6/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/articles/file7/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/articles/file8/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/articles/file9/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/articles/four/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/articles/my-second-article/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/articles/three/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/articles/my-first-article/</loc>
-    <lastmod>2012-04-06T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/categories/art/</loc>
+    <loc>https://richygit.github.io/japanbyrichie/tags/art/</loc>
     <lastmod>2017-09-18T09:17:23+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -106,12 +36,11 @@
   
   <url>
     <loc>https://richygit.github.io/japanbyrichie/categories/</loc>
-    <lastmod>2017-09-18T09:17:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://richygit.github.io/japanbyrichie/categories/festival/</loc>
+    <loc>https://richygit.github.io/japanbyrichie/tags/festival/</loc>
     <lastmod>2017-09-19T09:17:23+09:00</lastmod>
     <priority>0</priority>
   </url>
@@ -123,80 +52,32 @@
   </url>
   
   <url>
-    <loc>https://richygit.github.io/japanbyrichie/categories/hiking/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/tags/hiking/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/categories/hyogo/</loc>
+    <loc>https://richygit.github.io/japanbyrichie/tags/hyogo/</loc>
     <lastmod>2017-09-18T09:17:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://richygit.github.io/japanbyrichie/tags/japan/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/categories/matsuri/</loc>
+    <loc>https://richygit.github.io/japanbyrichie/tags/matsuri/</loc>
     <lastmod>2017-09-19T09:17:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://richygit.github.io/japanbyrichie/categories/museum/</loc>
+    <loc>https://richygit.github.io/japanbyrichie/tags/museum/</loc>
     <lastmod>2017-09-18T09:17:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://richygit.github.io/japanbyrichie/categories/osaka/</loc>
+    <loc>https://richygit.github.io/japanbyrichie/tags/osaka/</loc>
     <lastmod>2017-09-19T09:17:23+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/tags/shopping/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/tags/sightseeing/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://richygit.github.io/japanbyrichie/tags/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/tags/tourism/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/categories/tourist/</loc>
-    <lastmod>2017-05-15T19:14:58+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://richygit.github.io/japanbyrichie/tags/tourist/</loc>
-    <lastmod>2012-04-06T00:00:00+00:00</lastmod>
+    <lastmod>2017-09-18T09:17:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
