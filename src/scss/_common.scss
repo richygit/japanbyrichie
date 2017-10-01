@@ -88,7 +88,7 @@ figure {
   }
    
   li a:hover {
-   color: $highlight;
+   color: $color-link-hover;
   }
    
   .logo {
@@ -107,7 +107,7 @@ figure {
       width: 180px;
       fill: $content-colour;
       &:hover {
-        fill: $highlight;
+        fill: $color-link-hover;
       }
     }
     
