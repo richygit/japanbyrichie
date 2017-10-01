@@ -2,17 +2,14 @@
     <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "home.css" }}" />
 {{ end }} 
 {{ define "headScripts" }}
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  {{ partial "list_head.html" . }}
 {{ end }} 
 {{ define "main" }}
 <main class="home">
   <div class="row align-center">
     <div class="col col-10">
       <h1>Tags</h1>
-      <div class="grid">
-        <div class="grid-sizer"></div>
-        <div class="gutter-sizer"></div>
-
+      <div class="grid loading">
         {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
           {{ range first 1 $taxonomy }}
           <div class="grid-item">
@@ -30,6 +27,9 @@
           </div>
           {{ end }}
         {{ end }}
+
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
       </div>
       <div class="pagination-container">
         {{ template "_internal/pagination.html" . }}
@@ -38,20 +38,6 @@
   </end>
 </end>
 
-<script>
-  (function() {
-    var msnry = new Masonry('.grid', {
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-sizer',
-      gutter: '.gutter-sizer',
-      percentPosition: true
-    });
-
-    $('.date').each(function(idx, elem) {
-      var relative = moment($(elem).text(), "DD MMMM YYYY").fromNow();
-      $(elem).text(relative);
-    });
-  })();
-</script>
+{{ partial "list_end_script" . }}
 {{ partial "footer" . }}
 {{ end }}

@@ -1,7 +1,7 @@
 <script id="msnry" src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script>
   //load images asap
-  var imgs = document.getElementsByClassName('list-img');
+  var imgs = document.querySelectorAll('.list-img');
   for (var i = 0; i < imgs.length; ++i) {
     var img = new Image();
     img.src = imgs[i].getAttribute('src');

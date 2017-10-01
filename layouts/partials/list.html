@@ -4,7 +4,7 @@
       {{ if ne .URL "/japanbyrichie/" }}
         <h1><a href="{{ "/tags/" | relLangURL }}">Tags / </a>{{ .Title }}</h1>
       {{ end }}
-      <div class="grid">
+      <div class="grid loading">
         {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "articles") }}
         {{ range $paginator.Pages }}
           <div class="grid-item">
@@ -46,24 +46,5 @@
     </div>
   </div>
 </main>
-<script>
-  
-  window.onload = function() {
-    //set layout after everything (esp. images) have loaded
-    /* var msnry = new Masonry('.grid', {
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-sizer',
-      gutter: '.gutter-sizer',
-      percentPosition: true
-    });
-    */
-
-    //set relative dates
-    var dates = document.getElementsByClassName('date');
-    for (var i = 0; i < dates.length; ++i) {
-      var relative = moment(dates[i].textContent, "DD MMMM YYYY").fromNow();
-      dates[i].textContent = relative;
-    }
-  }
-</script>
+{{ partial "list_end_script" . }}
 {{ partial "footer" . }}

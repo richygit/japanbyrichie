@@ -58,10 +58,12 @@ p {
     width: 30%; 
     padding: 0px;
     margin-bottom: 60px;
-    margin: 10px;
   }
 
   .home {
     padding-top: 80px;
+  }
+  .loading .grid-item {
+      margin: 10px;
   }
 }
