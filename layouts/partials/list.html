@@ -5,8 +5,6 @@
         <h1><a href="{{ "/tags/" | relLangURL }}">Tags / </a>{{ .Title }}</h1>
       {{ end }}
       <div class="grid">
-        <div class="grid-sizer"></div>
-        <div class="gutter-sizer"></div>
         {{ $paginator := .Paginate (where .Data.Pages.ByDate.Reverse "Type" "articles") }}
         {{ range $paginator.Pages }}
           <div class="grid-item">
@@ -14,7 +12,7 @@
                 <a href="{{ .Permalink }}">
                   {{ $fileNameBase := replaceRE "(.*).jp(e?)g$" "$1" .Params.marquee }}
                   {{ $file450 := $fileNameBase | printf "%s-450px.jpg"}}
-                  <img src="/images/{{ index .Site.Data.images.hash  $file450  }}">
+                  <img class="list-img" src="/images/{{ index .Site.Data.images.hash  $file450  }}">
                 </a>
                 <div class="tags upper">
                   {{ range $index, $element := .Params.tags}}
@@ -39,6 +37,8 @@
             </article>
           </div>
         {{ end }}
+        <div class="grid-sizer"></div>
+        <div class="gutter-sizer"></div>
       </div>
       <div class="pagination-container">
         {{ template "_internal/pagination.html" . }}
@@ -46,21 +46,24 @@
     </div>
   </div>
 </main>
-
 <script>
-  (function() {
-    var msnry = new Masonry('.grid', {
+  
+  window.onload = function() {
+    //set layout after everything (esp. images) have loaded
+    /* var msnry = new Masonry('.grid', {
       itemSelector: '.grid-item',
       columnWidth: '.grid-sizer',
       gutter: '.gutter-sizer',
       percentPosition: true
     });
+    */
 
-    $('.date').each(function(idx, elem) {
-      var relative = moment($(elem).text(), "DD MMMM YYYY").fromNow();
-      $(elem).text(relative);
-    });
-  })();
+    //set relative dates
+    var dates = document.getElementsByClassName('date');
+    for (var i = 0; i < dates.length; ++i) {
+      var relative = moment(dates[i].textContent, "DD MMMM YYYY").fromNow();
+      dates[i].textContent = relative;
+    }
+  }
 </script>
-
 {{ partial "footer" . }}
