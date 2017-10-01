@@ -38,7 +38,7 @@ gulp.task("resize_images", function() {
           width: 1024,
           rename: { suffix: '-1024px' }
         }, {
-          width: '100%'
+          width: 1940
         }],
       }, {
         // Global configuration for all images
