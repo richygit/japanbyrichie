@@ -51,6 +51,9 @@ blockquote {
   figure {
     margin: 0px;
   }
+  figcaption {
+    margin: 0 20px;
+  }
 }
 
 .title {
@@ -117,6 +120,7 @@ blockquote {
     }
     figcaption {
       color: $marquee-text-colour;
+      @include hidden-styles;
     }
   }
 

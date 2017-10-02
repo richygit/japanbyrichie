@@ -13,13 +13,13 @@
       <figure>
         <img alt="{{.Get "alt"}}" src="/images/{{ index .Site.Data.images.hash $src }}"  srcset="/images/{{ index .Site.Data.images.hash  $file450 }} 450w, /images/{{ index .Site.Data.images.hash  $file768  }} 768w, /images/{{ index .Site.Data.images.hash  $file1024  }} 1024w, /images/{{ index .Site.Data.images.hash  $src  }}" />
         <div class="gradient-overlay"></div>
-        <figcaption class="hidden">{{.Get "caption"}}</figcaption>
+        <figcaption class="show-sm">{{.Get "caption"}}</figcaption>
       </figure>
 
     </div><!-- .plx-layer-back -->
     <div class="plx-layer plx-layer-overlay">
       <div class="layer-container">
-        <div class="layer-inner">
+        <div class="layer-inner hide-sm">
           {{ .Get "caption" }}
         </div><!-- .title-inner -->
       </div><!-- .title-container -->
