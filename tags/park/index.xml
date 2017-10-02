@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Park on Hello Richie</title>
+    <link>https://richygit.github.io/japanbyrichie/tags/park/</link>
+    <description>Recent content in Park on Hello Richie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <lastBuildDate>Sun, 16 Jul 2017 09:17:23 +0900</lastBuildDate>
+    
+	<atom:link href="https://richygit.github.io/japanbyrichie/tags/park/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Bampaku (Expo) Park</title>
+      <link>https://richygit.github.io/japanbyrichie/articles/bampaku-park/</link>
+      <pubDate>Sun, 16 Jul 2017 09:17:23 +0900</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/articles/bampaku-park/</guid>
+      <description>Coming soon.</description>
+    </item>
+    
+  </channel>
+</rss>

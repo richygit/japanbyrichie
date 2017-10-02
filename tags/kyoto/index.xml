@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kyoto on Hello Richie</title>
+    <link>https://richygit.github.io/japanbyrichie/tags/kyoto/</link>
+    <description>Recent content in Kyoto on Hello Richie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-au</language>
+    <lastBuildDate>Tue, 25 Jul 2017 09:17:23 +0900</lastBuildDate>
+    
+	<atom:link href="https://richygit.github.io/japanbyrichie/tags/kyoto/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Gion Matsuri</title>
+      <link>https://richygit.github.io/japanbyrichie/articles/gion-matsuri/</link>
+      <pubDate>Tue, 25 Jul 2017 09:17:23 +0900</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/articles/gion-matsuri/</guid>
+      <description>Coming soon.</description>
+    </item>
+    
+    <item>
+      <title>Kiyomizu Dera Temple</title>
+      <link>https://richygit.github.io/japanbyrichie/articles/kiyomizu-dera/</link>
+      <pubDate>Mon, 17 Jul 2017 09:17:23 +0900</pubDate>
+      
+      <guid>https://richygit.github.io/japanbyrichie/articles/kiyomizu-dera/</guid>
+      <description>Coming soon.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -13,6 +13,46 @@
   </url>
   
   <url>
+    <loc>https://richygit.github.io/japanbyrichie/articles/rokko-san-mayu-san/</loc>
+    <lastmod>2017-08-21T09:17:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/articles/ethnology-museum/</loc>
+    <lastmod>2017-08-21T09:17:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/articles/tenjin-tenma-awa-odori/</loc>
+    <lastmod>2017-08-20T09:17:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/articles/aizen-matsuri/</loc>
+    <lastmod>2017-07-25T09:17:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/articles/gion-matsuri/</loc>
+    <lastmod>2017-07-25T09:17:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/articles/tenjin-matsuri/</loc>
+    <lastmod>2017-07-25T09:17:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/articles/kiyomizu-dera/</loc>
+    <lastmod>2017-07-17T09:17:23+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/articles/bampaku-park/</loc>
+    <lastmod>2017-07-16T09:17:23+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://richygit.github.io/japanbyrichie/about/</loc>
     <lastmod>2017-06-06T23:15:19+09:00</lastmod>
   </url>
@@ -20,6 +60,11 @@
   <url>
     <loc>https://richygit.github.io/japanbyrichie/contact/</loc>
     <lastmod>2017-06-06T23:15:19+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/articles/flower-auctions/</loc>
+    <lastmod>2017-05-22T09:17:23+09:00</lastmod>
   </url>
   
   <url>
@@ -40,8 +85,32 @@
   </url>
   
   <url>
+    <loc>https://richygit.github.io/japanbyrichie/tags/culture/</loc>
+    <lastmod>2017-08-21T09:17:23+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/tags/dance/</loc>
+    <lastmod>2017-08-20T09:17:23+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://richygit.github.io/japanbyrichie/tags/festival/</loc>
     <lastmod>2017-09-19T09:17:23+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/tags/fireflies/</loc>
+    <lastmod>2017-07-16T09:17:23+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/tags/flowers/</loc>
+    <lastmod>2017-07-16T09:17:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -52,8 +121,26 @@
   </url>
   
   <url>
+    <loc>https://richygit.github.io/japanbyrichie/tags/hiking/</loc>
+    <lastmod>2017-08-21T09:17:23+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://richygit.github.io/japanbyrichie/tags/hyogo/</loc>
     <lastmod>2017-09-18T09:17:23+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/tags/kyoto/</loc>
+    <lastmod>2017-07-25T09:17:23+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/tags/love/</loc>
+    <lastmod>2017-07-25T09:17:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -76,8 +163,20 @@
   </url>
   
   <url>
+    <loc>https://richygit.github.io/japanbyrichie/tags/park/</loc>
+    <lastmod>2017-07-16T09:17:23+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://richygit.github.io/japanbyrichie/tags/</loc>
     <lastmod>2017-09-18T09:17:23+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/tags/temple/</loc>
+    <lastmod>2017-07-17T09:17:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
