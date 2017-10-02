@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="/css/kube-713c586b.css" />
 
     
-    <link rel="stylesheet" href="/css/page-a0dac174.css" />
+    <link rel="stylesheet" href="/css/page-84cc7b29.css" />
 
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Open+Sans:400,400i,700" rel="stylesheet" />
@@ -36,11 +36,22 @@
     var img = new Image();
     img.src = imgs[i].getAttribute('src');
   }
+
+  
+  var grid = document.querySelector('.loading');
+  grid.classList.remove('loading'); 
+  var msnry = new Masonry('.grid', {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    gutter: '.gutter-sizer',
+    horizontalOrder: true,
+    percentPosition: true
+  });
 </script>
 
 
-    <script src="/js/modernizr-2.8.3-respond-1.4.2.min-90db4ffd.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script async src="/js/modernizr-2.8.3-respond-1.4.2.min-90db4ffd.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/fecha/2.3.1/fecha.js"></script>
     
 </head>
 <body>
@@ -121,17 +132,6 @@
 <script>
   window.onload = function() {
     
-    var grid = document.querySelector('.loading');
-    grid.classList.remove('loading'); 
-    var msnry = new Masonry('.grid', {
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-sizer',
-      gutter: '.gutter-sizer',
-      horizontalOrder: true,
-      percentPosition: true
-    });
-
-    
     var dates = document.querySelectorAll('.date');
     for (var i = 0; i < dates.length; ++i) {
       var relative = moment(dates[i].textContent, "DD MMMM YYYY").fromNow();
@@ -153,12 +153,11 @@
 
   
   <script>
-      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-      e.src='//www.google-analytics.com/analytics.js';
-      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-      ga('create','UA-107335363-1','auto');ga('send','pageview');
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-107335363-1', 'auto');
+  ga('send', 'pageview');
   </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  
 </body>
 <html>
