@@ -119,18 +119,18 @@
   </div>
 </main>
 <script>
-  
-  var grid = document.querySelector('.loading');
-  grid.classList.remove('loading'); 
-  var msnry = new Masonry('.grid', {
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-sizer',
-    gutter: '.gutter-sizer',
-    horizontalOrder: true,
-    percentPosition: true
-  });
-
   window.onload = function() {
+    
+    var grid = document.querySelector('.loading');
+    grid.classList.remove('loading'); 
+    var msnry = new Masonry('.grid', {
+      itemSelector: '.grid-item',
+      columnWidth: '.grid-sizer',
+      gutter: '.gutter-sizer',
+      horizontalOrder: true,
+      percentPosition: true
+    });
+
     
     var dates = document.querySelectorAll('.date');
     for (var i = 0; i < dates.length; ++i) {
