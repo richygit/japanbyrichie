@@ -6,4 +6,15 @@
     var img = new Image();
     img.src = imgs[i].getAttribute('src');
   }
+
+  //set layout after images and masonry have loaded
+  var grid = document.querySelector('.loading');
+  grid.classList.remove('loading'); //replace styles with masonry styles
+  var msnry = new Masonry('.grid', {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    gutter: '.gutter-sizer',
+    horizontalOrder: true,
+    percentPosition: true
+  });
 </script>
