@@ -37,22 +37,11 @@
     var img = new Image();
     img.src = imgs[i].getAttribute('src');
   }
-
-  
-  var grid = document.querySelector('.loading');
-  grid.classList.remove('loading'); 
-  var msnry = new Masonry('.grid', {
-    itemSelector: '.grid-item',
-    columnWidth: '.grid-sizer',
-    gutter: '.gutter-sizer',
-    horizontalOrder: true,
-    percentPosition: true
-  });
 </script>
 
 
     <script async src="/js/modernizr-2.8.3-respond-1.4.2.min-90db4ffd.js"></script>
-    <script async src="https://cdnjs.cloudflare.com/ajax/libs/fecha/2.3.1/fecha.js"></script>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     
 </head>
 <body>
@@ -166,6 +155,17 @@ There&rsquo;s more than meets the eye when it comes to the Otani art museum. It 
   </div>
 </main>
 <script>
+  
+  var grid = document.querySelector('.loading');
+  grid.classList.remove('loading'); 
+  var msnry = new Masonry('.grid', {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    gutter: '.gutter-sizer',
+    horizontalOrder: true,
+    percentPosition: true
+  });
+
   window.onload = function() {
     
     var dates = document.querySelectorAll('.date');
