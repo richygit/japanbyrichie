@@ -21,11 +21,11 @@ The other major drawcard for the visit was [ Otani Museum ]( http://otanimuseum.
 
 This visit very nearly didn't happen, as everyone the week before was worried about the typhoon that was approaching. The predictions are really amazing when it comes to predicting the path of a typhoon. However the timing was rather strange. It was all meant to hit when I was at Kishiwada Danjiri Matsuri the day before, however that afternoon nothing really happened. I waited all night and it wasn't until several hours until after it was due to arrive that the rains and winds came. But pretty soon it was all over it was barely more than a storm by then. The next morning it was blue sky and most of Osaka was very lucky to have come through unscathed. 
 
-{{< fig caption="Sculpture in the garden at Otani Musemum" alt="Multi coloured sculpture in a plaza section of the museum." src="articles/otani-museum/sculpture.jpg" >}}
+{{< fig caption="Sculpture in the garden at Otani Museum" alt="Multi coloured sculpture in a plaza section of the museum." src="articles/otani-museum/sculpture.jpg" >}}
 
 I was really happy to not only come so close to a typhoon and coming out in one piece, but also get to visit the garden in all its glory the next day.
 
 
-{{< marquee caption="The pathway leads around the gallery to back. Surprisingly not that many people ventured outside to see the garden. Maybe they'd already seen it." alt="Beautiful winding pathway with prefectly shaped trees lining the path and emerald colours gouncing off the plants." src="articles/otani-museum/picturesque-pathway.jpg" >}}
+{{< marquee caption="The pathway leads around the gallery to back. Surprisingly not that many people ventured outside to see the garden. Maybe they'd already seen it." alt="Beautiful winding pathway with perfectly shaped trees lining the path and emerald colours bouncing off the plants." src="articles/otani-museum/picturesque-pathway.jpg" >}}
 
 Definitely worth another visit, maybe in the Autumn when there's another interesting exhibition on.
