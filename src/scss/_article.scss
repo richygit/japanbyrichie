@@ -102,7 +102,7 @@ blockquote {
     height: 95vh;
     &.secondary {
       height: 500px; /* fallback for older browsers */
-      height: 85vh;
+      height: 60vh;
     }
 
     img {
@@ -154,9 +154,14 @@ blockquote {
     }
   }
 
-  .secondary .layer-inner {
-    margin-top: 70vh;
-    font-weight: bold;
+  .secondary {
+    .layer-inner {
+      margin-top: 50vh;
+      font-weight: bold;
+    }
+    .layer-back {
+      height: 70vh;
+    }
   }
   .layer-inner {
     color: $marquee-text-colour;
