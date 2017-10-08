@@ -9,7 +9,7 @@
         {{ range $paginator.Pages }}
           <div class="grid-item">
             <article>
-                <a href="{{ .Permalink | relLangURL }}">
+                <a href="{{ .Permalink }}">
                   {{ $fileNameBase := replaceRE "(.*).jp(e?)g$" "$1" .Params.marquee }}
                   {{ $file450 := $fileNameBase | printf "%s-450px.jpg"}}
                   <img class="list-img" src="/images/{{ index .Site.Data.images.hash  $file450  }}">
@@ -21,7 +21,7 @@
                   {{end}}
                 </div>
                 <h2>
-                  <a href="{{ .Permalink | relLangURL}}">
+                  <a href="{{ .Permalink }}">
                       {{ .Title }}
                   </a>
                 </h2>
