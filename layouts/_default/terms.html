@@ -14,10 +14,10 @@
           {{ range first 1 $taxonomy }}
           <div class="grid-item">
             <article>
-                <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">
+                <a href="{{ "/tags/" }}{{ $name | urlize }}">
                   <img class="hide-sm" src="/images/{{ index .Site.Data.css.hash  .Page.Params.marquee  }}">
                   <h2>
-                    <a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}"> {{ $name }} ({{ len ($taxonomy) }})</a>
+                    <a href="{{ "/tags/" }}{{ $name | urlize }}"> {{ $name }} ({{ len ($taxonomy) }})</a>
                   </h2>
                 </a>
                 <p>
