@@ -4,6 +4,10 @@
   transition: transform 0.5s;
 }
 
+.plx-container {
+  padding-top: 63px;
+}
+
 body {
   font-weight: 400;
   font-size: 16px;
@@ -42,7 +46,7 @@ figcaption {
   img {
     width:100%;
     object-fit: cover;
-    height: 40vh;
+    height: 30vh;
     font-family: 'object-fit: cover;';
   }
 
@@ -106,7 +110,7 @@ figcaption {
     height: 95vh;
     &.secondary {
       height: 500px; /* fallback for older browsers */
-      height: 60vh;
+      height: 70vh;
     }
 
     img {
@@ -160,11 +164,8 @@ figcaption {
 
   .secondary {
     .layer-inner {
-      margin-top: 50vh;
+      margin-top: 60vh;
       font-weight: bold;
-    }
-    .layer-back {
-      height: 70vh;
     }
   }
   .layer-inner {
@@ -180,7 +181,6 @@ figcaption {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
-    padding-top: 64px;
   }
   .plx-layer {
     top: 0;
@@ -199,8 +199,12 @@ figcaption {
     }
     transform: translateZ(0);
     z-index: 2;
+    margin: 0px;
     &.content-bg {
       background: $content-bg;
+    }
+    img {
+      border-radius:7px;
     }
   }
 
@@ -211,6 +215,10 @@ figcaption {
     position: absolute;
     height: 100vh;
   }
+  .secondary .plx-layer-back {
+    height: 80vh;
+  }
+
   .plx-group {
     position: relative;
     display: inline-block;
@@ -223,9 +231,6 @@ figcaption {
     margin: auto;
     max-width: 840px;
     padding-top: 25px;
-  }
-  .plx-layer-overlay {
-    margin: 0px;
   }
   .menu {
     position:relative;
