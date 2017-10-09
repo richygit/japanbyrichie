@@ -51,6 +51,10 @@ p {
   width: 3%; 
 }
 
+.term-count {
+  font-weight: normal;
+}
+
 /* tablets and above */
 @include breakpoint(768px) {
   .grid-sizer,

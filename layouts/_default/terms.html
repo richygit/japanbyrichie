@@ -17,11 +17,11 @@
                 <a href="{{ "/tags/" }}{{ $name | urlize }}">
                   <img class="hide-sm" src="/images/{{ index .Site.Data.css.hash  .Page.Params.marquee  }}">
                   <h2>
-                    <a href="{{ "/tags/" }}{{ $name | urlize }}"> {{ $name }} ({{ len ($taxonomy) }})</a>
+                    <a href="{{ "/tags/" }}{{ $name | urlize }}"> {{ $name }} <span class="term-count">({{ len ($taxonomy) }})</span></a>
                   </h2>
                 </a>
                 <p>
-                  {{ .Page.Date.Format "2 January 2006" }}
+                  Last: {{ .Page.Date.Format "2 January 2006" }}
                 </p>
             </article>
           </div>
