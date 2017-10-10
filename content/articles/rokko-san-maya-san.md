@@ -33,11 +33,11 @@ So I asked a guy at a car park for directions and he didn't know where the train
 
 {{< marquee caption="Scrubby plant looked like an emerald carpet in the little shortcut between properties." alt="Low lying plants grow like a green river, hemmed in by taller trees." src="articles/rokko-maya/carpet.jpg" >}}
 
-Unfortunately this only lead back to the main road which I had no choice but to follow down. When I finally got to the saddle between Mt Rokko and Mt Maya, I discovered that there was indeed a trail, one that was not only more scenic but was actually shorter and would have saved me time too. But it wasn't the end of the world because I came across the breathtaking Tenjoo Temple.
+Unfortunately this only lead back to the main road which I had no choice but to follow down. When I finally got to the saddle between Mt Rokko and Mt Maya, I discovered that there was indeed a trail, one that was not only more scenic but was actually shorter and would have saved me time too. But it wasn't the end of the world because I came across the breathtaking Tenjō-ji Temple.
 
-{{< fig caption="The wonderful entranceway to the temple which I'm sure looks picture perfect all year round." alt="Bright pink flowers greet you as you enter Tenjoo Temple with a central staircase that looks like it leads to a forest heaven." src="articles/rokko-maya/tenjoji.jpg" >}}
+{{< fig caption="The wonderful entranceway to the temple which I'm sure looks picture perfect all year round." alt="Bright pink flowers greet you as you enter Tenjō-ji Temple with a central staircase that looks like it leads to a forest heaven." src="articles/rokko-maya/tenjoji.jpg" >}}
 
-There entranceway itself is a beautiful thing which greets you with lush green trees and highlighted by an incredible, aged flowering tree that guards the pathway. As I ascended, it was just so peaceful and serene it was as though entering Tenjoo Temple was like being transported to another time. The garden and temple complex at the top of the stairs was just perfection and the unforgiving sky was a perfect frame for such a radiant temple.
+There entranceway itself is a beautiful thing which greets you with lush green trees and highlighted by an incredible, aged flowering tree that guards the pathway. As I ascended, it was just so peaceful and serene it was as though entering Tenjō-ji Temple was like being transported to another time. The garden and temple complex at the top of the stairs was just perfection and the unforgiving sky was a perfect frame for such a radiant temple.
 
 {{< marquee caption="The gardens were perfectly maintained in this temple which looked like the gateway to heaven." alt="A solitary torii gate across the courtyard is outlined against the radiant blue sky which leaves only a silhouette of the torii as though it leads to heaven." src="articles/rokko-maya/torii-silhouette.jpg" >}}
 
