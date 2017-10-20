@@ -8,7 +8,7 @@ var gulp         = require("gulp"),
 
 // Compile SCSS files to CSS
 gulp.task("scss", function () {
-    del(["static/css/**/*"])
+    del(["static/css/**/*", "!static/css"])
     gulp.src(["src/scss/**/*.scss","src/css/*.css"])
         .pipe(sass({outputStyle : "compressed"}))
         .pipe(autoprefixer({browsers : ["last 20 versions"]}))
@@ -23,38 +23,44 @@ gulp.task("scss", function () {
         .pipe(gulp.dest("static/css"))
 })
 
+gulp.task("del_resize_images", function() {
+  return del(["src/resize_images/**/*", "!src/resize_images"])
+})
+
 //create images in different resolutions
 gulp.task("resize_images", function() {
-    del(["src/resize_images/**/*"])
-    return gulp.src('src/images/**/*.jpg')
-      .pipe(responsive({
-        '**/*.jpg': [{
-          width: 450,
-          rename: { suffix: '-450px' }
-        }, {
-          width: 768,
-          rename: { suffix: '-768px' }
-        }, {
-          width: 1024,
-          rename: { suffix: '-1024px' }
-        }, {
-          width: 1940
-        }],
+  return gulp.src('src/images/**/*.jpg')
+    .pipe(responsive({
+      '**/*.jpg': [{
+        width: 450,
+        rename: { suffix: '-450px' }
       }, {
-        // Global configuration for all images
-        // The output quality for JPEG, WebP and TIFF output formats
-        quality: 70,
-        // Use progressive (interlace) scan for JPEG and PNG output
-        progressive: true,
-        // Strip all metadata
-        withMetadata: false,
-      }))
-      .pipe(gulp.dest('src/resize_images'))
+        width: 768,
+        rename: { suffix: '-768px' }
+      }, {
+        width: 1024,
+        rename: { suffix: '-1024px' }
+      }, {
+        width: 1940
+      }],
+    }, {
+      // Global configuration for all images
+      // The output quality for JPEG, WebP and TIFF output formats
+      quality: 70,
+      // Use progressive (interlace) scan for JPEG and PNG output
+      progressive: true,
+      // Strip all metadata
+      withMetadata: false,
+    }))
+    .pipe(gulp.dest('src/resize_images'))
+})
+
+gulp.task("del_images", function() {
+  return del(["static/images/**/*", "!static/images"])
 })
 
 gulp.task("images", function() {
-  del(["static/images/**/*"])
-  gulp.src("src/resize_images/**/*")
+  return gulp.src("src/resize_images/**/*")
       .pipe(hash())
       .pipe(gulp.dest("static/images"))
       .pipe(hash.manifest("hash.json"))
@@ -63,7 +69,7 @@ gulp.task("images", function() {
 
 // Hash javascript
 gulp.task("js", function () {
-    del(["static/js/**/*"])
+    del(["static/js/**/*", "!static/js"])
     gulp.src("src/js/**/*")
         .pipe(hash())
         .pipe(gulp.dest("static/js"))
@@ -78,7 +84,7 @@ gulp.task("init", function() {
 // Watch asset folder for changes
 gulp.task("watch", ["init"], function () {
     gulp.watch("src/scss/**/*", ["scss"])
-    gulp.watch("src/images/**/*", function(){ runSequence("resize_images", "images")} )
+    gulp.watch("src/images/**/*", function(){ runSequence("del_resize_images", "resize_images", "del_images", "images")} )
     gulp.watch("src/js/**/*", ["js"])
 })
 
