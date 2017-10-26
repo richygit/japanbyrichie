@@ -7,6 +7,7 @@ tagline = "The sun tower thing is just weird though"
 marquee = "articles/bampaku-park/flower.jpg"
 marqueeCaption = "Beautiful flower whose variety I don't know is a clump of small flowers surrounded by a halo of bigger flowers in sweet pastel colours"
 tags = ["park", "osaka", "flowers", "fireflies"]
+draft = true
 +++
 
 Coming soon.

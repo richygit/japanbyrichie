@@ -7,6 +7,7 @@ tagline = "The views do not disappoint"
 marquee = "articles/kiyomizu-dera/gate.jpg"
 marqueeCaption = "Crowds of people surround the welcoming red gate to Kiyomizu Dera Temple"
 tags = ["temple", "kyoto"]
+draft = true
 +++
 
 Coming soon.
