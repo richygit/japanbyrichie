@@ -2,6 +2,7 @@ $marquee-text-colour: #fff;
 $content-bg: #fff;
 $content-colour: #616161;
 $heading-colour: #505050;
+$nav-text-colour: #fff;
 $highlight: #00bcd4;
 $light-colour: #8d8d8d;
 $heading-font: 'Montserrat';
@@ -69,14 +70,14 @@ figure {
 
 /* nav */
 .header {
-  background-color: #fff;
+  background-color: #00bcd4;
   position: fixed;
   width: 100%;
   z-index: 3;
-  border-bottom: 1px #00bcd4 solid;
   font-size: 16px;
+  border-bottom: 1px #00bcd4 solid;
   a {
-    color: $heading-colour;
+    color: $nav-text-colour;
   }
 
   ul {
@@ -93,7 +94,7 @@ figure {
     text-transform: uppercase;
     font-weight: normal;
     text-decoration: none;
-    color: $light-colour;
+    color: $nav-text-colour;
   }
    
   li a:hover {
@@ -105,7 +106,7 @@ figure {
     float: left;
     font-size: 1.5em;
     text-decoration: none;
-    color: $content-colour;
+    color: $nav-text-colour;
     width: 180px;
     height: 50px;
     padding: 0 10px;
@@ -114,7 +115,7 @@ figure {
     svg {
       height: 48px;
       width: 180px;
-      fill: $content-colour;
+      fill: $nav-text-colour;
       &:hover {
         fill: $color-link-hover;
       }
@@ -143,7 +144,7 @@ figure {
     user-select: none;
 
     .navicon {
-      background: $heading-colour;
+      background: $nav-text-colour;
       display: block;
       height: 2px;
       position: relative;
@@ -153,7 +154,7 @@ figure {
      
     .navicon:before,
     .navicon:after {
-      background: $heading-colour;
+      background: $nav-text-colour;
       content: '';
       display: block;
       height: 100%;
@@ -268,7 +269,7 @@ article img {
       float: left;
     }
     li a {
-      padding: 13px 30px;
+      padding: 13px 27px;
     }
     .menu {
       clear: none;
