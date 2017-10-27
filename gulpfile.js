@@ -55,11 +55,11 @@ gulp.task("resize_images", function() {
     .pipe(gulp.dest('src/resize_images'))
 })
 
-gulp.task("del_images", function() {
+gulp.task("del_static_images", function() {
   return del(["static/images/**/*", "!static/images"])
 })
 
-gulp.task("images", function() {
+gulp.task("resize_to_static_images", function() {
   return gulp.src("src/resize_images/**/*")
       .pipe(hash())
       .pipe(gulp.dest("static/images"))
@@ -78,13 +78,13 @@ gulp.task("js", function () {
 })
 
 gulp.task("init", function() {
-  runSequence(["scss", "js"], "resize_images", "images")
+  runSequence(["scss", "js"], "del_resize_images", "resize_images", "del_static_images", "resize_to_static_images")
 })
 
 // Watch asset folder for changes
 gulp.task("watch", ["init"], function () {
     gulp.watch("src/scss/**/*", ["scss"])
-    gulp.watch("src/images/**/*", function(){ runSequence("del_resize_images", "resize_images", "del_images", "images")} )
+    gulp.watch("src/images/**/*", function(){ runSequence("del_resize_images", "resize_images", "del_static_images", "resize_to_static_images")} )
     gulp.watch("src/js/**/*", ["js"])
 })
 
