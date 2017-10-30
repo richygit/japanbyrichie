@@ -28,6 +28,11 @@
   </url>
   
   <url>
+    <loc>https://richygit.github.io/japanbyrichie/articles/gion-matsuri/</loc>
+    <lastmod>2017-07-25T09:17:23+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://richygit.github.io/japanbyrichie/about/</loc>
     <lastmod>2017-06-06T23:15:19+09:00</lastmod>
   </url>
@@ -87,6 +92,12 @@
   <url>
     <loc>https://richygit.github.io/japanbyrichie/tags/hyogo/</loc>
     <lastmod>2017-09-18T09:17:23+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://richygit.github.io/japanbyrichie/tags/kyoto/</loc>
+    <lastmod>2017-07-25T09:17:23+09:00</lastmod>
     <priority>0</priority>
   </url>
   
