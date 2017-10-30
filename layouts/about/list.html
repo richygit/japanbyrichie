@@ -1,3 +1,6 @@
+{{ define "headStyles" }}
+    <link rel="stylesheet" href="/css/{{ index .Site.Data.css.hash "article.css" }}" />
+{{ end }} 
 {{ define "main" }}
   {{ partial "static" . }}
 {{ end }}
