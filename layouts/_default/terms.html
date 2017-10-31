@@ -15,7 +15,9 @@
           <div class="grid-item">
             <article>
                 <a href="{{ "/tags/" }}{{ $name | urlize }}">
-                  <img class="hide-sm" src="/images/{{ index .Site.Data.css.hash  .Page.Params.marquee  }}">
+                  {{ $fileNameBase := replaceRE "(.*).jp(e?)g$" "$1" .Params.marquee }}
+                  {{ $file450 := $fileNameBase | printf "%s-450px.jpg"}}
+                  <img class="hide-sm" src="/images/{{ index .Site.Data.images.hash  $file450  }}">
                   <h2>
                     <a href="{{ "/tags/" }}{{ $name | urlize }}"> {{ $name }} <span class="term-count">({{ len ($taxonomy) }})</span></a>
                   </h2>
